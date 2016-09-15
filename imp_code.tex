@@ -1,0 +1,4114 @@
+************************************************************************
+
+@media screen and (min-width: 768px) {
+    
+    #myModal4 .modal-dialog  {width:900px;}
+
+}
+#myModal3 {
+top:5%;
+right:50%;
+outline: none;
+}
+************************************************************************
+Going Forward : Each individual need to make List of everything himself .
+Like  CR hours (Approved by client )
+Total hours .(allocated for project )
+Total hours burned on app ( Total Hours Invested by Each individual on project ) 
+
+
+Keep this number with you all time up to Date !! 
+
+
+FYI :  
+CR : 
+Android : 8Hours 
+iOS : 3Hours
+Backend : 8 Hours
+************************************************************************
+select id,first_name,created_at from users WHERE created_at < DATE_SUB(NOW(), INTERVAL 24 HOUR)
+   AND created_at > DATE_SUB(NOW(), INTERVAL 48 HOUR)
+************************************************************************
+INSERT INTO `users` (`id`, `first_name`, `last_name`, `dob`, `username`, `email`, `facebook_id`, `device_id`, `device_type`, `profile_pic`, `password`, `phone_number`, `stripe_account`, `stripe_customer`, `managed`, `city`, `state`, `address`, `country`, `zip_code`, `id_proof_linked`, `account_linked`, `four_digit_number`, `personal_id_number`, `debit_linked`, `remember_me`, `status`, `verified`, `stripe_verification_status`, `stripe_transfers_enabled_status`, `remember_token`, `referral_shown`, `redeem_reward`, `created_at`, `updated_at`) VALUES
+(159,   'Yady Marcela', 'GonzÃ¡lez Franco', '', 'Yady Marcela Gonzalez',    'yazul1234@hotmail.com',    '10154972889418135',    '', '', 'kduwprofile_pic.jpg',  NULL,   '', '', '', 'N',    '', '', '', '', '', 'N',    'N',    'N',    'N',    'N',    'N',    1,  0,  0,  0,  'QTP68WJBrIWi2lSu4LisljgRnVatpE',   1,  'N',    '2016-08-29 17:03:26',  '2016-08-30 17:12:59'),
+(160,   'Mauricio AndrÃ©s', 'CortÃ©s Botero',   '', 'Mauricio AndrÃ©s', 'mark7980@hotmail.com', '10153648994983456',    '', '', 'rhivprofile_pic.jpg',  NULL,   '', '', '', 'N',    'port st Lucie',    'Florida',  'test', 'USA',  '', 'N',    'N',    'N',    'N',    'N',    'N',    1,  0,  0,  0,  'QrVTPlFfn2zk9se4eOpx1sglq6uooY',   1,  'N',    '2016-08-29 17:12:47',  '2016-08-29 18:03:34');
+************************************************************************
+<?php
+$amount = 1000; // amount in cents
+$stripePrice = (0.029 * $amount)+30;
+$amountTransferd = $amount - $stripePrice;
+
+//charges by Stripe in cents
+echo $stripePrice;
+
+// amount transferd to account in dollars
+echo $amountTransferd/100;
+
+//amount transferd to account in cents
+echo $amountTransferd;
+************************************************************************
+Fatal error: Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Insufficient funds in Stripe account. In test mode, you can add funds to your available balance (bypassing your pending balance) by creating a charge with 4000 0000 0000 0077 as the card number. You can use the the /v1/balance endpoint to view your Stripe balance (for more details, see stripe.com/docs/api#balance).' in /var/www/html/swapm/stripe/vendor/stripe/stripe-php/lib/ApiRequestor.php:103 from API request 'req_95uT1qNlx1Au9A' Stack trace: #0 /var/www/html/swapm/stripe/vendor/stripe/stripe-php/lib/ApiRequestor.php(222): Stripe\ApiRequestor->handleApiError('{? "error": {?...', 400, Array, Array) #1 /var/www/html/swapm/stripe/vendor/stripe/stripe-php/lib/ApiRequestor.php(60): Stripe\ApiRequestor->_interpretResponse('{? "error": {?...', 400, Array) #2 /var/www/html/swapm/stripe/vendor/stripe/stripe-php/lib/ApiResource.php(108): Stripe\ApiRequestor->request('post', '/v1/transfers', Array, Array) #3 /var/www/html/swapm/stripe/vendor/stripe/stri in /var/www/html/swapm/stripe/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 103
+************************************************************************
+Notification messages api names for swapm: fisrt_initials,stripe_cron_release_payment,delete_flight,add_reward_count,add_rating,stripe_payout_buyer,cron_flight_equipment_name,cron_delete_flight,refund_request,crud_model
+Total Count: 10 apis
+************************************************************************
+ID:
+card_18k8RjLb2yZjJT5nVFTstcS6
+Name:
+barry john
+Number:
+···· 5556
+Fingerprint:
+xNFMpLWxgCgeQvlU
+Expires:
+11 / 2018
+Type:
+Visa debit card
+Currency:
+USD
+************************************************************************
+Asia/Kolkata
+Airbus A330-300
+America/Denver
+Airbus A320
+************************************************************************
+http://techstream.org/Web-Development/PHP/Single-File-Upload-With-PHP
+************************************************************************
+
+Crontab Format:
+MIN HOUR DOM MON DOW CMD
+Format Meanings and Allowed Value:
+MIN     Minute field    0 to 59
+HOUR    Hour field      0 to 23
+DOM     Day of Month    1-31
+MON     Month field     1-12
+DOW     Day Of Week     0-6
+CMD     Command     Any command to be executed.
+************************************************************************
+************************************************************************
+
+
+Welcome To Live Chat
+12:16:35 PM
+Nikitha K
+Hello, Thanks for contacting Customer Support. My name is Nikitha and I'm happy to help you. One moment while I review your account.
+12:16:43 PM
+Nikitha K
+Could I get the last 4 characters of the main account password to verify ownership of the account?
+12:17:15 PM
+Ram
+sure
+12:18:02 PM
+Ram
+This is the last four digit of my account password: peye
+12:19:56 PM
+Ram
+are you there??
+12:21:35 PM
+Nikitha K
+Yes. I'm here.
+12:21:51 PM
+Nikitha K
+Thank you for validating.
+12:22:14 PM
+Nikitha K
+I see that you wish to make changes in php.ini file.
+12:22:41 PM
+Nikitha K
+Could you please tell me what changes do you wish to make?
+12:22:46 PM
+Ram
+Actually problem is that when i upload a single image then form is submitting successfully, But when uses two or more images then it will not work
+12:23:47 PM
+Ram
+I would like to change the post_max_filesize and upload_max filesize
+12:24:17 PM
+Ram
+so that i can upload more than one images at the same time
+12:25:21 PM
+Ram
+when i am using more than two images to upload on the server....then the server is loading and loading again and again
+12:25:30 PM
+Nikitha K
+Okay. Please give me a moment while I check this issue.
+12:27:51 PM
+Ram
+okay, please
+12:30:52 PM
+Nikitha K
+Could you please tell me for which domain do you wish to make the changes to php.ini file?
+12:32:34 PM
+Ram
+taxiasap.com
+12:33:48 PM
+Nikitha K
+Okay. One moment please.
+12:36:08 PM
+Nikitha K
+Okay. I have updated both these values in php.ini. Could you please check it now?
+12:36:59 PM
+Ram
+okay ..just a moment
+12:39:36 PM
+Nikitha K
+Okay.
+12:40:18 PM
+Ram
+No, still Its not working.
+12:41:12 PM
+Ram
+could you change the post_max_size
+12:41:37 PM
+Ram
+it will be greater than the upload_max_size
+12:41:42 PM
+Nikitha K
+I have updated the php.ini file. You can check it in public_html. I have changed the value to 100M. It takes some time to get updated on the server.
+12:41:58 PM
+Nikitha K
+Okay.
+12:42:14 PM
+Ram
+like post_max_size: 128M and upload_max_size: 64M
+12:43:40 PM
+Nikitha K
+Okay. I have updated post_max_size to 128M and upload_max_size to 64M
+12:44:31 PM
+Ram
+okay let me check again
+12:45:31 PM
+Ram
+still its not working
+12:45:47 PM
+Ram
+server just loading and loading
+12:46:36 PM
+Nikitha K
+The update on the php.ini file needs to some time to get updated on the server. You will need to try it after some time.
+12:47:34 PM
+Nikitha K
+You can check it in a couple of hours.
+12:51:37 PM
+Nikitha K
+Is there anything else I can help you with?
+12:52:28 PM
+Ram
+okay
+12:52:33 PM
+Ram
+Nothing else
+12:52:42 PM
+Ram
+Thanks
+12:52:54 PM
+Nikitha K
+Okay. You are welcome. It was my pleasure to help you today.
+12:53:30 PM
+Nikitha K
+There is just a brief two question survey after the chat to rate our performance, I would appreciate it if you could give us your feedback. You can get to the survey by clicking the "Rate and Close" button located in the upper right hand corner of this screen. Thank you for contacting support and Happy Hosting!
+12:53:59 PM
+Ram
+I will contact you shortly again
+12:54:56 PM
+Nikitha K
+Okay. Yes. Sure.
+12:55:37 PM
+System
+This chat session has ended.
+
+
+************************************************************************
+18001802222
+18001032222
+select * from jbt_testeeUsers where join_date<'2016-07-04'
+SELECT * FROM taxi_users WHERE online_status='1' AND last_login < DATE_SUB(NOW(),INTERVAL 14 HOUR)
+************************************************************************
+************************************************************************
+Get the date time according to time zone
+************************************************************************
+$server_dateTime = date('Y-m-d h:i:s A');
+//call the timezone function
+$timezone = getUserTimeZone($user_id);  
+
+$noti_date = $fetchUsrNoti['date'];
+if(!empty($timezone)){
+    $date = new DateTime($noti_date);
+    $date->setTimezone(new DateTimeZone($timezone))
+    $noti_date = $date->format('Y-m-d h:i A');
+    $data1['noti_date'] = $noti_date;
+}else{
+    $data1['noti_date'] = $fetchUsrNoti['date'];
+}
+$data1['server_dateTime'] = $server_dateTime;
+
+//function to get the time zone
+    function getUserTimeZone($user_id){
+        $getLoginUserLatLng = mysql_fetch_assoc(mysql_query("select lat,lng,user_id from sans_user where user_id='$user_id'"));
+        if(!empty($getLoginUserLatLng['lat']) && !empty($getLoginUserLatLng['lng'])){
+            $lat = $getLoginUserLatLng['lat'];
+            $lng = $getLoginUserLatLng['lng'];
+            //code for getting the state from lat lng
+            $geocode_state=file_get_contents('http://maps.googleapis.com/maps/api/geocode/json?latlng='.$lat.','.$lng.'&sensor=false');
+            $output_state= json_decode($geocode_state);
+            $address_state="";
+            for($j=0;$j<count($output_state->results[0]->address_components);$j++)
+            {       
+                if($output_state->results[0]->address_components[$j]->types[0]=='administrative_area_level_1')
+                {
+                    //print_r($output_state);
+                    $address_state = $output_state->results[0]->address_components[$j]->long_name;
+                }
+            }
+            $state_timezones = array(
+                0 => array(
+                    'name' => 'ALASKA',
+                    'timezone' => 'AKST',
+                    'timediff' => '-9',
+                ),
+                1 => array(
+                    'name' => 'ALABAMA',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                2 => array(
+                    'name' => 'ARKANSAS',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                3 => array(
+                    'name' => 'ARIZONA',
+                    'timezone' => 'MST',
+                    'timediff' => '-7',
+                ),
+                4 => array(
+                    'name' => 'CALIFORNIA',
+                    'timezone' => 'PDT',
+                    'timediff' => '-8',
+                ),
+                5 => array(
+                    'name' => 'COLORADO',
+                    'timezone' => 'MST',
+                    'timediff' => '-7',
+                ),
+                6 => array(
+                    'name' => 'CONNECTICUT',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                7 => array(
+                    'name' => 'DISTRICT OF COLUMBIA',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                8 => array(
+                    'name' => 'DELAWARE',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                9 => array(
+                    'name' => 'FLORIDA',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                10 => array(
+                    'name' => 'GEORGIA',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                11 => array(
+                    'name' => 'GUAM GU',
+                    'timezone' => 'ChST',
+                    'timediff' => '-10',
+                ),
+                12 => array(
+                    'name' => 'HAWAII',
+                    'timezone' => 'HST',
+                    'timediff' => '-10',
+                ),
+                13 => array(
+                    'name' => 'IOWA',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                14 => array(
+                    'name' => 'IDAHO',
+                    'timezone' => 'MDT',
+                    'timediff' => '-7',
+                ),
+                15 => array(
+                    'name' => 'ILLINOIS',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                16 => array(
+                    'name' => 'INDIANA',
+                    'timezone' => 'EST',
+                    'timediff' => '-5',
+                ),
+                17 => array(
+                    'name' => 'KANSAS',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                18 => array(
+                    'name' => 'KENTUCKY',
+                    'timezone' => 'EST',
+                    'timediff' => '-6',
+                ),
+                19 => array(
+                    'name' => 'LOUISIANA',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                20 => array(
+                    'name' => 'MASSACHUSETTS',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                21 => array(
+                    'name' => 'MARYLAND',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                22 => array(
+                    'name' => 'MAINE',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                23 => array(
+                    'name' => 'MICHIGAN',
+                    'timezone' => 'America/Detroit',
+                    'timediff' => '-5',
+                ),
+                24 => array(
+                    'name' => 'MINNESOTA',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                25 => array(
+                    'name' => 'MISSOURI',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                26 => array(
+                    'name' => 'MISSISSIPPI',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                27 => array(
+                    'name' => 'MONTANA',
+                    'timezone' => 'MST',
+                    'timediff' => '-7',
+                ),
+                28 => array(
+                    'name' => 'NORTH CAROLINA',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                29 => array(
+                    'name' => 'NORTH DAKOTA',
+                    'timezone' => 'CST',
+                    'timediff' => '-7',
+                ),
+                30 => array(
+                    'name' => 'NEBRASKA',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                31 => array(
+                    'name' => 'NEW HAMPSHIRE',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                32 => array(
+                    'name' => 'NEW JERSEY',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                33 => array(
+                    'name' => 'NEW MEXICO',
+                    'timezone' => 'MST',
+                    'timediff' => '-7',
+                ),
+                34 => array(
+                    'name' => 'NEVADA',
+                    'timezone' => 'PDT',
+                    'timediff' => '-8',
+                ),
+                35 => array(
+                    'name' => 'NEW YORK',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                36 => array(
+                    'name' => 'OHIO',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                37 => array(
+                    'name' => 'OKLAHOMA',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                38 => array(
+                    'name' => 'OREGON',
+                    'timezone' => 'PDT',
+                    'timediff' => '-8',
+                ),
+                39 => array(
+                    'name' => 'PENNSYLVANIA',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                40 => array(
+                    'name' => 'PUERTO RICO',
+                    'timezone' => 'AST',
+                    'timediff' => '-4',
+                ),
+                41 => array(
+                    'name' => 'RHODE ISLAND',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                42 => array(
+                    'name' => 'SOUTH CAROLINA',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                43 => array(
+                    'name' => 'SOUTH DAKOTA',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                44 => array(
+                    'name' => 'TENNESSEE',
+                    'timezone' => 'CDT',
+                    'timediff' => '-5',
+                ),
+                45 => array(
+                    'name' => 'TEXAS',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                46 => array(
+                    'name' => 'UTAH',
+                    'timezone' => 'MST',
+                    'timediff' => '-7',
+                ),
+                47 => array(
+                    'name' => 'VIRGINIA',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                48 => array(
+                    'name' => 'VIRGIN ISLANDS',
+                    'timezone' => 'AST',
+                    'timediff' => '-4',
+                ),
+                49 => array(
+                    'name' => 'VERMONT',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                50 => array(
+                    'name' => 'WASHINGTON',
+                    'timezone' => 'PDT',
+                    'timediff' => '-8',
+                ),
+                51 => array(
+                    'name' => 'WISCONSIN',
+                    'timezone' => 'CDT',
+                    'timediff' => '-6',
+                ),
+                52 => array(
+                    'name' => 'WEST VIRGINIA',
+                    'timezone' => 'EDT',
+                    'timediff' => '-5',
+                ),
+                53 => array(
+                    'name' => 'WYOMING',
+                    'timezone' => 'MST',
+                    'timediff' => '-7',
+                ),
+            );
+            for($i=0;$i<count($state_timezones);$i++)
+            {
+                if(strcasecmp($address_state, $state_timezones[$i]['name']) == 0)
+                {
+                    break;
+                }
+            }
+            $timezone = $state_timezones[$i]['timezone'];
+            if(!empty($timezone)){
+                $timezone = $state_timezones[$i]['timezone'];
+            }else{
+                $timezone = "";
+            }
+        }else{
+            $timezone = "";
+        }
+        return $timezone;
+    }
+
+************************************************************************
+stripe account msg: An account with this email already exists.
+************************************************************************
+//for cron checking testing mail
+// the message
+$msg = "welcome to swapm for testing cron job";
+// send email
+mail("sandeep.verma@kindlebit.com","Cron Testing",$msg);
+************************************************************************
+
+************************************************************************
+http://simple_pdo_implementation.onlinephpfunctions.com/
+http://code.tutsplus.com/tutorials/php-database-access-are-you-doing-it-correctly--net-25338
+************************************************************************
+Transfers to this account are disabled.
+
+Stripe needs the following information to verify the account:
+legal_entity.dob.day
+legal_entity.dob.month
+legal_entity.dob.year
+Please provide the required information to re-enable the account. Charge creation may be disabled for this account in 8 days if the information is not provided.
+************************************************************************
+Tamika user info:
+sql query:
+"INSERT INTO `xo_users` (`id`, `fb_id`, `iphn_udid`, `android_udid`, `user_type`, `truexo_number`, `first_name`, `last_name`, `email`, `pwd`, `city`, `country`, `gender`, `birthday`, `location`, `home_town`, `username`, `relationship`, `current_location`, `profile_pic`, `email_varification`, `created_date`, `quickshare_id`, `facebook_profile`, `twitter_profile`, `linkedin_profile`, `instagram_profile`, `about_me`, `truexo_score`, `status`, `political`, `religion`, `interests`, `relationship_details`, `fb_token`, `total_friends`, `common_friends`, `last_post_date`, `calls`, `last_login`, `lat`, `lng`, `user_status`, `version`, `lat_lng_status`) VALUES
+(1467,  '10210248096105618',    '', 'APA91bEXiv8YPlGYf9YNpC8PR8fHR48tA7yj5ANUIvROmzM8XON4_Fp7DeatqiOJb_A6gTuSd4t0GBMP0vIJlTp1J68CBgP6vAhrpgwdKmRW_L9UzG04aRw',  'android',  'tamika2459',   'Tamika',   'Cox',  'tamika1117@yahoo.com', '', 'Arlington',    'United States',    'female',   '05/05/1975',   '', 'Brooklyn, New York',   '', 'Single',   'Arlington, Virginia',  'tamika_mdal.jpg',  '1',    '2016-07-27 05:53:15',  '15642830', '1',    '0',    '0',    '0',    '', '5',    '1',    '', 'Christian - Baptist',  '', '', 'EAAFB6fDlGBIBAHC4ye0uRVuptrEhwlBDZBuquRuxPfZBqxZA0p6dotCD4Mpr8GZAPTaA0HrxnRZC5ZCp71ZBtaE6sf6ApAOzRRp4JzZBx2SbDpStIGqW3QOkqtZBigxH5lYHEZAdHZBxPJWqjrBE1MwtLDXQbKBkOWNYhwjha48NFwRR3VpHh4ZCZB3Js7k5y75ZAnAPywua9HTRmM7C2C7AESt1zg',  '148',  '0',    '0',    '3',    '2016-07-27 06:12:18 -0400',    '38.8955931',   '-77.0745243',  '1',    '1.0',  0);
+"
+************************************************************************
+************************************************************************
+7c222fb2927d828af22f592134e8932480637c0d : 3dmagical
+f7f274adb722a03cd0c10b05b8a4840aad56c259
+https://developers.braintreepayments.com/guides/marketplace/overview
+https://developers.braintreepayments.com/reference/response/transaction/php
+https://developers.braintreepayments.com/guides/marketplace/onboarding/php
+https://articles.braintreepayments.com/guides/marketplace/funding#sub-merchant-funding
+https://www.braintreepayments.com/faq#marketplace
+http://stackoverflow.com/questions/22484229/venmo-payment-sdk-chaining-system   
+************************************************************************
+//curl to get the file content
+function getlatlng($url){
+    $curl_connection = curl_init($url);
+    curl_setopt($curl_connection, CURLOPT_CONNECTTIMEOUT, 30);
+    curl_setopt($curl_connection, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl_connection, CURLOPT_SSL_VERIFYPEER, false);       
+    $latlng = json_decode(curl_exec($curl_connection), true);
+    curl_close($curl_connection);
+    return $latlng;
+}
+************************************************************************
+cf26acd877cfcb0ae37971581443fe7b257832c26612ea0ec3822829cf06bbf3
+862f2c13f98d40e9b245a686b7f11405b663ea7e1745956b3680b668e39ce9c5
+************************************************************************
+2nd time barryjohnsan11: code=6ee7569f709f477589806721cda6b8e6
+[access_token] => 2282927349.7ba2fda.0ffa65fa4daa4ad891c98e750ed0d735
+https://api.instagram.com/v1/tags/markitsocial_6_laq/media/recent?access_token=2282927349.7ba2fda.0ffa65fa4daa4ad891c98e750ed0d735
+barryjohnsan11 [access_token] => 2282927349.7ba2fda.0ffa65fa4daa4ad891c98e750ed0d735
+code=48019a7ebb5e437f86c2e2bb392dfdbd
+code=9e22551084454283b20a86c534c3aa1d
+Markitsocial autolinkistapost error: {"meta": {"error_type": "OAuthPermissionsException", "code": 400, "error_message": "This request requires scope=public_content, but this access token is not authorized with this scope. The user must re-authorize your application with scope=public_content to be granted this permissions."}}
+************************************************************************
+JBT popularizes free testing for sexually transmitted diseases, specifically HIV, by utilizing a
+social media platform, integrating testing opportunities into the social lives of young people
+and creating user incentives. Increased testing reduces the spread of infection and removes
+the stigma associated with knowing one’s sexual health status.
+*************************************************************************
+JBT instagram review process
+screencast url: https://www.dropbox.com/s/19idddl29eh08on/jbt%20instagram.mov?dl=0
+Our app includes the health and lifestyle questions for users where user can give the answer accordingly as per their assessment. So user needs to login. user can login with any of mean like facebook,twitter,instagram or using website sign in. So there we need instagram basic permission to login with their instagram credential and could give the test. After doing complete assessment, we logout the user and didn't save any data from instagram or any other social media login.
+
+For this all we need the basic permission.
+*************************************************************************************
+
+************************************************************************
+Query for group by clasue or order by id for latest record
+SELECT * From xo_user_profileImg where id IN (select max(id) from xo_user_profileImg group by user_id ) order by id DESC
+
+
+2) welcome email. I'll draft something for you. Can you send me the current version?  Are we able to send a HTML formatted email or an email with graphics in it?
+
+ 
+3) user photos. I'd love to have a page on the management screens that is sorted by user latest photo upload date - (ie. look at the photo upload dates for all user photos, and list the USERS that have new photos - and show across the screen a bunch of their photos) and it shows medium size thumbs of photos that have been uploaded.  I'd like to be able to delete photos that are inappropriate or don't show the user and when that happens, an email is queued up to send later in the day to the user informing them of the photo policy and that a photo has been removed.  (See below)
+************************************************************************
+[fingerprint] => X0hk8rVlDFsT9GAL
+ [fingerprint] => X0hk8rVlDFsT9GAL
+  [fingerprint] => X0hk8rVlDFsT9GAL
+  [fingerprint] => tTToiEuHvrgbevIC
+
+There is a web admin for seat swap as well
+○ Administration Section (Web Based)
+○ Admin Login
+○ Manage Application Users
+○ View Payments Status
+○ Manage Application Master Information
+○ Manage Referals
+
+************************************************************************
+<?php
+foreach(glob('airline_image/*.*') as $filename){
+    echo "<pre>";
+    echo $filename;
+    echo "<pre>";
+    echo $name_with_underscore = basename($filename,".jpg");
+    echo "<pre>";
+    echo $name_with_spaces = str_replace("_"," ","$name_with_underscore");
+    echo "<pre>";
+    echo $pos1 = strpos($name_with_spaces, ' ');
+    echo "<pre>";
+    echo $pos2 = strpos($name_with_spaces, ' ', $pos1+1);
+    echo "<pre>";
+    // echo $pos3 = strpos($name_with_spaces, ' ', $pos2+1);
+    // echo "<pre>";
+    if ($pos2 !== false) {
+        echo $remove_first_two_letter = substr($name_with_spaces, $pos2+1);
+    }
+
+}
+    $str = 'one two three four';
+    echo $pos1 = strpos($str, ' ');
+        echo "<pre>";
+    echo $pos2 = strpos($str, ' ', $pos1+1);
+        echo "<pre>";
+    echo $pos3 = strpos($str, ' ', $pos2+1);
+    echo "<pre>";
+    if ($pos3 !== false) {
+        echo $str = substr($str, $pos3+1);
+    }
+?>
+
+************************************************************************
+function getInstgramData($nodes)
+    {    
+        $node_count = count($nodes);    
+        $curl_arr = array();
+        $master   = curl_multi_init();
+        for ($i = 0; $i < $node_count; $i++) {
+            $url = $nodes[$i];
+            $curl_arr[$i] = curl_init($url);
+            curl_setopt($curl_arr[$i], CURLOPT_CONNECTTIMEOUT, 30);
+            curl_setopt($curl_arr[$i], CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($curl_arr[$i], CURLOPT_SSL_VERIFYPEER, false);
+            curl_multi_add_handle($master, $curl_arr[$i]);
+        }
+        do {
+            curl_multi_exec($master, $running);
+        } while ($running > 0);
+        for ($i = 0; $i < $node_count; $i++) {
+            $results[] = curl_multi_getcontent($curl_arr[$i]);  
+        }
+        return $results;   
+    }
+php script to check the port no for ios push notification
+<?php 
+
+chkServer('gateway.sandbox.push.apple.com',2196); 
+//chkServer('gateway.push.apple.com',2195); 
+
+function chkServer($host, $port) 
+{ 
+echo $hostip = @gethostbyname($host); 
+
+if ($hostip == $host) 
+{ 
+echo "Server is down or does not exist"; 
+} 
+else 
+{ 
+if (!$x = @fsockopen($hostip, $port, $errno, $errstr, 5)) 
+{ 
+echo "Port $port is closed."; 
+} 
+else 
+{ 
+echo "Port $port is open."; 
+if ($x) 
+{ 
+@fclose($x); 
+} 
+} 
+} 
+} 
+?>
+************************************************************************
+http://www.phpgang.com/how-to-integrate-stripe-payment-gateway-in-php-1_1027.html
+special character remove code or utf-8
+// function jsonRemoveUnicodeSequences($json_data) {
+//    return preg_replace("/\\\\u([a-f0-9]{4})/e", "iconv('UCS-4LE','UTF-8',pack('V', hexdec('U$1')))", json_encode($json_data));
+// }
+//print statement
+echo json_encode($jsondata,JSON_UNESCAPED_UNICODE);
+//echo json_encode($jsondata);
+//echo jsonRemoveUnicodeSequences($jsondata);
+code to get the month from two dates in mysql
+SELECT TIMESTAMPDIFF(MONTH, '2016-05-05', '2016-06-04')
+SELECT DATE_ADD( '2016-04-13', INTERVAL 1 month )-INTERVAL 2 DAY as next_date
+
+1. SELECT id,user_id,test_date,returning_user_count from test_type_verification WHERE test_date!='' and jbt_verification_status=1 and  user_id=1487 order by id ASC LIMIT 0,1
+
+
+JBT admin Password: 21232f297a57a5a743894a0e4a801fc3
+JBT Justbeentested admin Password: 7a4c0561a57c7e6c18a43a8f09f72e45
+
+
+<html>
+<head>
+    <title>allwon only numbers in textbox using JavaScript</title>
+    <script language="Javascript" type="text/javascript">
+ 
+        function onlyNos(e, t) {
+            try {
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                }
+                else if (e) {
+                    var charCode = e.which;
+                }
+                else { return true; }
+                if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                    return false;
+                }
+                return true;
+            }
+            catch (err) {
+                alert(err.Description);
+            }
+        }
+ 
+    </script>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td>
+                <input type="text" onkeypress="return onlyNos(event,this);" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<form method="post" action="" id="myform">
+    <div id="gridSort">
+    <input type="hidden" name="selected_sort" value="<?php echo !empty($_POST['sort']) ? strip_tags($_POST['sort']) : ''; ?>" />
+    <input type="hidden" name="selectionList_view" value="<?php echo !empty($_POST['Listview']) ? strip_tags($_POST['Listview']) : ''; ?>" />
+   <input  type="hidden" name="selectionGrid_view" value="<?php echo !empty($_POST['Gridview']) ? strip_tags($_POST['Gridview']) : ''; ?>" />
+        <span>View Results As:</span> <span>
+        <input type="submit" class="listButtons" name="Lisview" value="List"> </span> <span>
+        <input  type="submit" class="resultButtons" name="Gridview" value="Grid"></span>
+         <select id="sortSelect" class="sortSelect" size="1" name="sort" onchange="this.form.submit();" >
+                <option selected>Sort</option>
+                <option value="Name">Name</option>
+                <option value="PriceLowToHigh">Price - Low</option>
+                <option value="PriceHighToLow">Price - High</option>
+        </select> 
+    </div>
+</form>
+<script type="text/javascript">
+document.getElementById('sortSelect').value ="<?php if(! $_POST['sort']):?>"Sort"<?php  else:  echo $_POST['sort']; endif;?>";
+</script>
+<pre>
+<?php print_r($_POST); ?>
+</pre>
+
+
+Yes
+<input class="calc" type="radio" name="radio1" value="10" />
+No
+<input class="calc" type="radio" name="radio1" value="0" /><br />
+Yes
+<input class="calc" type="radio" name="radio2" value="Yes(10)" />
+No
+<input class="calc" type="radio" name="radio2" value="0" /><br />
+Yes
+<input class="calc" type="radio" name="radio3" value="10" />
+No
+<input class="calc" type="radio" name="radio3" value="0" /><br/>
+Total Score: 
+<input type="text" name="sum"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+function calcscore(){
+    var score = 0;
+    $(".calc:checked").each(function(){
+        var fullstr = $(this).val();
+        var  strVal = fullstr.replace ( /[^\d.]/g, '' ); 
+        score+=parseInt(strVal,10);
+    });
+    $("input[name=sum]").val(score)
+}
+$().ready(function(){
+    $(".calc").change(function(){
+        calcscore()
+    });
+});
+
+</script>
+<script>
+var  str1 = "yes(1)".replace ( /[^\d.]/g, '' ); 
+var str2 = "NO(0)".replace ( /[^\d.]/g, '' ); 
+var str3= "Yes(2)".replace ( /[^\d.]/g, '' ); 
+total = parseInt(str1)+parseInt(str2)+parseInt(str3);
+//alert(total); 
+</script>
+
+A.  Blood Pressure
+B.  A1C
+C.  HIV
+1. BP & A1C Risk Assessment
+2. HIV Risk Assessment
+3. Lifestyle Risk Assessment
+IF USER SELECT
+A
+THEN 3 and 1
+
+B
+THEN 3 and 1
+
+C
+THEN 3 and 2
+
+A & B
+THEN 3 and 1
+
+A & B & C
+THEN 3 then 1 then 2
+
+A or B & C
+THEN 3 the 1 then 2
+
+<<< 
+
+************************************************************************
+RISK ASSESSMENT QUESTIONS LUXSCI FORM
+http://justbeentested.org/error_msg.php
+http://justbeentested.org/complete_registration.php
+<style type="text/css">@font-face {
+  font-family: 'Conv_berlin-sans-fb';
+  src: url('http://jbt.offsureit.com/fonts/berlin-sans-fb.eot');
+  src: url('http://jbt.offsureit.com/fonts/berlin-sans-fbt.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('http://jbt.offsureit.com/fonts/berlin-sans-fb.woff') format('woff'), url('http://jbt.offsureit.com/fonts/berlin-sans-fb.woff') format('woff'), url('http://jbt.offsureit.com/fonts/berlin-sans-fb.ttf') format('truetype'), url('http://jbt.offsureit.com/fonts/berlin-sans-fb.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ul{ padding:0px; margin:0px;}
+.question_spacing{ padding: 15px 0 0 0;
+  float: left;
+  width: 95%;}
+
+.form_center iframe#riskform body {font-family: 'Conv_berlin-sans-fb' !important; color:#000 !important; background:#edf1f4;}
+body{background:#edf1f4 !important; }
+
+#secureform div input[type="radio"]{ float:left; padding-left:10px;}
+#secureform div h3{
+    color: #5E5E5E;
+  font-family: 'Conv_berlin-sans-fb';
+  font-size: 18px;
+  font-weight: bold;
+   padding:0px;
+   margin-top: 0px;
+    margin-bottom: 6px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+#secureform div input[type="checkbox"]{float:left;}
+#secureform label{color: #545353;
+  float: left;
+  font-family: 'Conv_berlin-sans-fb';
+  font-size: 12px; font-weight:bold;}
+
+form#secureform, form#secureform *, form#secureform *:before, form#secureform *:after{ -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
+
+form#secureform li {
+  float: left;
+  width: 100%; 
+  padding: 5px 0;
+  padding-left:40px;
+}
+.questionwrap {
+color: #000;
+}
+.com_btn {
+width: 10%;
+margin: 0 auto;
+margin-bottom: 15px;
+}
+.com_btn button{background-color: #18a689;padding: 6px 12px;margin-bottom: 0;font-size: 14px;font-weight: 400;line-height: 1.42857143;color:#fff; border:None; border-radius: 4px;}
+.com_btn button:hover{background-color: #1AB39F;}
+
+
+@media only screen and (max-width:767px){
+
+   form#secureform li{ padding-left:15px; }
+   #secureform div input[type="checkbox"], #secureform div input[type="radio"]{float:none;display:inline-block;}
+   #secureform label{float:none;display:inline-block;}
+   #riskform body.secureform{ padding:0 !important; }
+
+}
+
+@media only screen and (max-width:480px){
+
+form#secureform li{ padding-left:0; }
+
+}
+</style>
+<div class="question_spacing" id="showque0">
+<h3><span class="questionwrap">Question</span> 1. Why are you interested in getting tested?</h3>
+<input id="user_id" name="user_id" type="hidden" value="" />
+<ul type="None">
+    <li><input name="question1" required="" type="radio" value="I am starting or ending a relationship" /><label>I am starting or ending a relationship</label></li>
+    <li><input name="question1" required="" type="radio" value="I may have been exposed to an STI" /><label>I may have been exposed to an STI</label></li>
+    <li><input name="question1" required="" type="radio" value="I may have a symptom (or my partner may have a symptom)" /><label>I may have a symptom (or my partner may have a symptom)</label></li>
+    <li><input name="question1" required="" type="radio" value="I want free stuff/discounts" /><label>I want free stuff/discounts</label></li>
+    <li><input name="question1" required="" type="radio" value="Just curious" /><label>Just curious</label></li>
+</ul>
+</div>
+
+<div class="question_spacing" id="showque1">
+<h3><span class="questionwrap">Question</span> 2. What is your relationship status?</h3>
+
+<ul type="None">
+    <li><input name="question2" required="" type="radio" value="No partner" /><label>No partner</label></li>
+    <li><input name="question2" required="" type="radio" value="Steady partner" /><label>Steady partner</label></li>
+    <li><input name="question2" required="" type="radio" value="No steady partner" /><label>No steady partner</label></li>
+    <li><input name="question2" required="" type="radio" value="multiple steady partners" /><label>Multiple steady partners</label></li>
+</ul>
+</div>
+
+<div class="question_spacing" id="showque2">
+<h3><span class="questionwrap">Question</span> 3. Are you considering sex with a new partner?</h3>
+
+<ul type="None">
+    <li><input name="question3" required="" type="radio" value="Yes" /><label>Yes</label></li>
+    <li><input name="question3" required="" type="radio" value="No" /><label>No</label></li>
+    <li><input name="question3" required="" type="radio" value="Not Sure" /><label>Not Sure</label></li>
+</ul>
+</div>
+
+<div class="question_spacing" id="showque3">
+<h3><span class="questionwrap">Question&nbsp;</span>4. Do you know the status of your last partner?</h3>
+
+<ul type="None">
+    <li><input name="question4" required="" type="radio" value="Yes" /><label>Yes</label></li>
+    <li><input name="question4" required="" type="radio" value="No" /><label>No</label></li>
+</ul>
+</div>
+
+<div class="question_spacing" id="showque4">
+<h3><span class="questionwrap">Question</span> 5. How often do you ask about the STI testing history of your partner?</h3>
+
+<ul type="None">
+    <li><input name="question5" required="" type="radio" value="All of the time" /><label>All of the time</label></li>
+    <li><input name="question5" required="" type="radio" value="Most of the time" /><label>Most of the time</label></li>
+    <li><input name="question5" required="" type="radio" value="Sometimes" /><label>Sometimes</label></li>
+    <li><input name="question5" required="" type="radio" value="Not as often as I should" /><label>Not as often as I should</label></li>
+</ul>
+</div>
+
+<div class="question_spacing" id="showque5">
+<h3><span class="questionwrap">Question</span> 6. When was the last time you were sexually active?</h3>
+
+<ul type="None">
+    <li><input name="question6" required="" type="radio" value="In the last 3 months" /><label>In the last 3 months</label></li>
+    <li><input name="question6" required="" type="radio" value="In the last 6 months" /><label>In the last 6 months</label></li>
+    <li><input name="question6" required="" type="radio" value="In the last 12 months" /><label>In the last 12 months</label></li>
+    <li><input name="question6" required="" type="radio" value="Can not remember" /><label>Can&rsquo;t remember</label></li>
+</ul>
+</div>
+
+<div class="question_spacing" id="showque6">
+<h3><span class="questionwrap">Question</span> 7. When is the last time you were tested for an STI/STD?</h3>
+
+<ul type="None">
+    <li><input name="question7" required="" type="radio" value="in last 6 months" /><label>In last 6 months</label></li>
+    <li><input name="question7" required="" type="radio" value="In the last 12 months" /><label>In the last 12 months</label></li>
+    <li><input name="question7" required="" type="radio" value="In the last 24 months" /><label>In the last 24 months</label></li>
+    <li><input name="question7" required="" type="radio" value="Can not remember" /><label>Can&rsquo;t remember</label></li>
+</ul>
+</div>
+
+<div class="question_spacing" id="showque7">
+<h3><span class="questionwrap">Question</span> 8. If you were tested in the last 24 months, what were you tested for?</h3>
+
+<ul class="question_spacing" type="None">
+    <li><input name="question8a" type="checkbox" value="HIV" /><label>HIV</label></li>
+    <li><input name="question8b" type="checkbox" value="Herpes" /><label>Herpes</label></li>
+    <li><input name="question8c" type="checkbox" value="Syphilis" /><label>Syphilis</label></li>
+    <li><input name="question8d" type="checkbox" value="PID" /><label>PID</label></li>
+    <li><input name="question8e" type="checkbox" value="GoNorrhea" /><label>GoNorrhea</label></li>
+    <li><input name="question8f" type="checkbox" value="Chlamydia" /><label>Chlamydia</label></li>
+    <li><input name="question8g" type="checkbox" value="Other" /><label>Other</label></li>
+    <li><input name="question8h" type="checkbox" value="None" /><label>None</label></li>
+</ul>
+</div>
+
+<div class="question_spacing" id="showque8">
+<h3><span class="questionwrap">Question</span> 9. Have you had unprotected oral sex with anyone in the last year?</h3>
+
+<ul type="None">
+    <li><input name="question9" required="" type="radio" value="Yes" /><label>Yes</label></li>
+    <li><input name="question9" required="" type="radio" value="No" /><label>No</label></li>
+    <li><input name="question9" required="" type="radio" value="Not sure" /><label>Not sure</label></li>
+    <li><input name="question9" required="" type="radio" value="More than 1" /><label>More than 1</label></li>
+</ul>
+</div>
+
+<div class="question_spacing" id="showque9">
+<h3><span class="questionwrap">Question</span> 10. Have you had unprotected vaginal sex with more than one partner in the last year?</h3>
+
+<ul type="None">
+    <li><input name="question10" required="" type="radio" value="Yes" /><label>Yes</label></li>
+    <li><input name="question10" required="" type="radio" value="No" /><label>No</label></li>
+    <li><input name="question10" required="" type="radio" value="Not sure" /><label>Not sure</label></li>
+    <li><input name="question10" required="" type="radio" value="More than 1" /><label>More than 1</label></li>
+</ul>
+</div>
+
+<div class="question_spacing" id="showque10">
+<h3><span class="questionwrap">Question</span> 11. Have you had unprotected anal sex with more than one partner in the last year?</h3>
+
+<ul type="None">
+    <li><input name="question11" required="" type="radio" value="Yes" /><label>Yes</label></li>
+    <li><input name="question11" required="" type="radio" value="No" /><label>No</label></li>
+    <li><input name="question11" required="" type="radio" value="Not sure" /><label>Not sure</label></li>
+</ul>
+</div>
+
+<div class="question_spacing" id="showque10">
+<h3><span class="questionwrap">Question</span> 12. What is your sexual orientation/preference?</h3>
+
+<ul type="None">
+    <li><input name="question12" required="" type="radio" value="Heterosexual" /><label>Heterosexual</label></li>
+    <li><input name="question12" required="" type="radio" value="Bisexual" /><label>Bisexual</label></li>
+    <li><input name="question12" required="" type="radio" value="Homosexual" /><label>Homosexual</label></li>
+    <li><input name="question12" required="" type="radio" value="Still deciding" /><label>Still deciding </label></li>
+</ul>
+</div>
+
+<div class="question_spacing" id="showque11">
+<h3><span class="questionwrap">Question</span> 13. Have you been injected with a syringe outside of a medical facility?</h3>
+
+<ul type="None">
+    <li><input name="question13" required="" type="radio" value="Yes" /><label>Yes</label></li>
+    <li><input name="question13" required="" type="radio" value="No" /><label>No</label></li>
+</ul>
+</div>
+<input id="user_id" name="user_id" type="hidden" />
+<div class="com_btn"><button class="btn btn-primary" id="ans_submit" name="ans_submit" type="submit" value="submit">Submit</button></div>
+
+
+************************************************************************
+************************************************************************
+
+<img class="aQG aYB" id=":mj" src="?ui=2&amp;ik=42826a4f58&amp;view=fimg&amp;th=153cc64fb0fecc3b&amp;attid=0.1&amp;disp=thd&amp;attbid=ANGjdJ_rjpkKB06yxUx2RLjVH3LXF41QVtOlzX0tF-kpDVeaCp9OUHRwjbdmM_c0mCe19DTs9CzNlXXYKCH71EjqDl24JtO_oBxBeDdSxpjRjiHgUcMKfS0-yXQyfrk&amp;sz=w180-h120-p-nu&amp;ats=1459423365290&amp;rm=153cc64fb0fecc3b&amp;zw" style="margin: auto; position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; max-width: 100%; max-height: 100%;">
+
+https://www.youtube.com/watch?v=4VFpsvBueOw
+offsure wordpress admin pwd: $P$BSo5PEwStf1LgyCkkdfdT3.RgNgvuf1
+***************************************************************
+Script for unzip the directory in filezila
+<?php
+    //simple code to unzip the folder in filezila using script
+     // $zip = new ZipArchive;
+  //    $res = $zip->open('demo.zip');
+  //    if ($res === TRUE) {
+  //        $zip->extractTo('aa');
+  //        $zip->close();
+  //        echo 'ok';
+  //    } else {
+  //        echo 'failed';
+  //    }
+
+/* Simple script to upload a zip file to the webserver and have it unzipped
+   Saves tons of time, think only of uploading Wordpress to the server
+   Thanks to c.bavota (www.bavotasan.com)
+   I have modified the script a little to make it more convenient
+   Modified by: Johan van de Merwe (12.02.2013)
+*/   
+ 
+function rmdir_recursive($dir) {
+    foreach(scandir($dir) as $file) {
+       if ('.' === $file || '..' === $file) continue;
+       if (is_dir("$dir/$file")) rmdir_recursive("$dir/$file");
+       else unlink("$dir/$file");
+   }
+ 
+   rmdir($dir);
+}
+ 
+if($_FILES["zip_file"]["name"]) {
+    $filename = $_FILES["zip_file"]["name"];
+    $source = $_FILES["zip_file"]["tmp_name"];
+    //echo $type = $_FILES["zip_file"]["type"];
+ 
+    $name = explode(".", $filename);
+    //print_r($name);
+    $accepted_types = array('application/zip', 'application/x-zip-compressed', 'multipart/x-zip', 'application/x-compressed');
+    foreach($accepted_types as $mime_type) {
+        if($mime_type == $type) {
+            $okay = true;
+            break;
+        } 
+    }
+ 
+    $continue = strtolower($name[1]) == 'zip' ? true : false;
+    if(!$continue) {
+        $message = "The file you are trying to upload is not a .zip file. Please try again.";
+    }
+ 
+  /* PHP current path */
+  $path = dirname(__FILE__).'/';  // absolute path to the directory where zipper.php is in
+  $filenoext = basename ($filename, '.zip');  // absolute path to the directory where zipper.php is in (lowercase)
+  $filenoext = basename ($filenoext, '.ZIP');  // absolute path to the directory where zipper.php is in (when uppercase)
+ 
+  $targetdir = $path . $filenoext; // target directory
+  $targetzip = $path . $filename; // target zip file
+ 
+  /* create directory if not exists', otherwise overwrite */
+  /* target directory is same as filename without extension */
+ 
+  if (is_dir($targetdir))  rmdir_recursive ( $targetdir);
+ echo $targetdir;
+ 
+  mkdir($targetdir, 0777);
+ 
+ 
+  /* here it is really happening */
+ 
+    if(move_uploaded_file($source, $targetzip)) {
+        $zip = new ZipArchive();
+        $x = $zip->open($targetzip);  // open the zip file to extract
+        if ($x === true) {
+            $zip->extractTo($targetdir); // place in the directory with same name  
+            $zip->close();
+ 
+            unlink($targetzip);
+        }
+        $message = "Your .zip file was uploaded and unpacked.";
+    } else {    
+        $message = "There was a problem with the upload. Please try again.";
+    }
+}
+ 
+ 
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Unzip a zip file to the webserver</title>
+</head>
+ 
+<body>
+<?php if($message) echo "<p>$message</p>"; ?>
+<form enctype="multipart/form-data" method="post" action="">
+<label>Choose a zip file to upload: <input type="file" name="zip_file" /></label>
+<br />
+<input type="submit" name="submit" value="Upload" />
+</form>
+</body>
+</html>
+
+***************************************************************
+
+bitcoin
+api-15xCQiLfkxy6CY4s:NZXgT3AZ1jgXV5wnwTCXLtbW
+http://bitzuma.com/posts/a-beginners-guide-to-the-electrum-bitcoin-wallet/
+steps to install laravel:
+important links:
+http://tecadmin.net/install-laravel-framework-on-ubuntu/
+root@kindlebit-All-Series:~# gedit /etc/apache2/sites-available/laravel.dev.conf
+https://github.com/illuminate/support/blob/master/Collection.php
+
+1 root@kindlebit-All-Series:~# composer create-project --prefer-dist laravel/laravel blog
+
+Created project in blog
+> php -r "copy('.env.example', '.env');"
+Loading composer repositories with package information
+Installing dependencies (including require-dev)
+- Installing vlucas/phpdotenv (v2.2.0)
+    Downloading: 100%         
+
+  - Installing symfony/polyfill-mbstring (v1.1.0)
+    Loading from cache
+
+  - Installing symfony/var-dumper (v3.0.2)
+    Loading from cache
+
+  - Installing symfony/translation (v3.0.2)
+    Downloading: 100%         
+
+  - Installing symfony/routing (v3.0.2)
+    Downloading: 100%         
+
+
+-
+-
+-
+-
+
+-
+
+> php artisan clear-compiled
+> php artisan optimize
+Generating optimized class loader
+> php artisan key:generate
+Application key [YvThouIWAKIP6It0gJhQ580E7CcwGUQv] set successfully.
+
+
+steps to install cake php
+1 root@kindlebit-All-Series:/var/www/html/cakephp# composer
+2 root@kindlebit-All-Series:/var/www/html/cakephp# curl -sS https://getcomposer.org/installer | php
+3 root@kindlebit-All-Series:/var/www/html/cakephp# sudo mv composer.phar /usr/local/bin/composer
+4 composer
+5 ls
+6 root@kindlebit-All-Series:/var/www/html/cakephp# cd /var/www/html
+7 root@kindlebit-All-Series:/var/www/html/cakephp# composer create-project --prefer-dist cakephp/app cakephp
+8 root@kindlebit-All-Series:/var/www/html/cakephp# php -m
+9 root@kindlebit-All-Series:/var/www/html/cakephp# sudo apt-get install php5-intl
+10 root@kindlebit-All-Series:/var/www/html/cakephp# composer create-project --prefer-dist cakephp/app cakephp
+11 root@kindlebit-All-Series:/var/www/html/cakephp# cd cakephp
+    To remove the directory forcefully
+12 root@kindlebit-All-Series:/var/www/html/cakephp# rm -rf cakephp
+    Then install again if not installed properally
+13 root@kindlebit-All-Series:/var/www/html/cakephp# composer create-project --prefer-dist cakephp/app cakephp
+14 root@kindlebit-All-Series:/var/www/html/cakephp# chmod -R 777 cakephp
+15 root@kindlebit-All-Series:/var/www/html/cakephp# nano index.php (To check the file content)
+16 root@kindlebit-All-Series:/var/www/html/cakephp# bin/cake server (To start the server, if u will close this then cakePhp will not responde any more) http://localhost:8765/users
+17 kindlebit@kindlebit-All-Series:/var/www/html/cakephp$ bin/cake bake all (To bake the database tables) like: 
+(kindlebit@kindlebit-All-Series:/var/www/html/cakephp$ bin/cake bake all users) 
+18 kindlebit@kindlebit-All-Series:/var/www/html/cakephp$ bin/cake bake
+result: 
+Welcome to CakePHP v3.2.1 Console
+---------------------------------------------------------------
+App : src
+Path: /var/www/html/cakephp/src/
+PHP : 5.6.18-1+deb.sury.org~trusty+1
+---------------------------------------------------------------
+The following commands can be used to generate skeleton code for your application.
+
+Available bake commands:
+
+- all
+- behavior
+- cell
+- component
+- controller
+- fixture
+- form
+- helper
+- mailer
+- migration
+- migration_snapshot
+- model
+- plugin
+- seed
+- shell
+- shell_helper
+- template
+- test
+
+By using `cake bake [name]` you can invoke a specific bake task.
+
+
+***************************************************************************************
+
+http://www.flipkart.com/aquanta-plastic-square-1-containers-lunch-box/p/itmedhcqfkadpaqf?pid=LBXEDHCQ5PUZVCHU&ref=L%3A-1513624810793123554&srno=p_35&query=lunch+box+for+office&otracker=from-search
+14497485291963860464.jpg
+Z29vZ2xlQCMxMjM=
+***********************************************************
+Baked snippets fo wrodpress
+http://www.wpfunction.me/
+http://underscores.me/
+***********************************************************
+komodo default path for filezilla
+php /usr/bin/komodo-edit
+txt /usr/bin/komodo-edit
+css /usr/bin/komodo-edit
+
+cron job url :
+/usr/bin/GET     http://web1.kindlebit.com/webservices/taxiApp/webapp/cron_job.php
+/usr/bin/GET  http://pattannco.com/projects/markitsocial/autoLinkInstaPostCron.php
+curl for getting the multiple records info from instagram
+    function getInstgramData($nodes)
+    {    
+    $node_count = count($nodes);    
+    $curl_arr = array();
+    $master   = curl_multi_init();
+    
+    for ($i = 0; $i < $node_count; $i++) {
+        $url          = $nodes[$i];
+        $curl_arr[$i] = curl_init($url);
+        curl_setopt($curl_arr[$i], CURLOPT_CONNECTTIMEOUT, 30);
+        curl_setopt($curl_arr[$i], CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl_arr[$i], CURLOPT_SSL_VERIFYPEER, false);
+        curl_multi_add_handle($master, $curl_arr[$i]);
+    }
+    
+    do {
+        curl_multi_exec($master, $running);
+    } while ($running > 0);
+    for ($i = 0; $i < $node_count; $i++) {
+        $results[] = curl_multi_getcontent($curl_arr[$i]);
+        
+    }
+    return $results;
+    
+    }
+    //curl to get the file content
+    public function instaCurl($url){
+		$curl_connection = curl_init($url);
+        curl_setopt($curl_connection, CURLOPT_CONNECTTIMEOUT, 30);
+        curl_setopt($curl_connection, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl_connection, CURLOPT_SSL_VERIFYPEER, false);       
+        $data = json_decode(curl_exec($curl_connection), true);
+        curl_close($curl_connection);
+		return $data;
+	}
+    1) Project Name: markitsocial
+Environment or Tools: PHP, MySQL, Lamp, Geany Editor, Komodo Edit
+Projects Description:
+markitsocial is a website for business users who create the campaign and post it in the markitsocial as well as in the instagram. The campaign created by the business user with a # hashtag and the users of Instagram who like that post has linked to the markitsocial.
+Contribution:
+Backend Implementation of API’s for the app.
+Development of Website and admin panel.
+
+2) Project Name: Kydrides
+Environment or Tools: PHP, MySQL, Lamp, Geany Editor, Komodo Edit
+Projects Description:
+Kydrides allow users to create circles of their trusted friends and broadcast paid rides for their children or other family members in those circles.
+Contribution:
+Backend Implementation of API’s for the app.
+Development of Admin Panel
+
+3) Project Name: JBT ( Just Been Tested )
+Environment or Tools: PHP, MySQL, Lamp, Geany Editor, Komodo Edit, JavaScript, Jquery, Luxsci forms and database
+Website URL  : Justbeentested.org
+
+Projects Description:
+JBT is free social networking service designed to encourage like-minded people to get tested for sexual transmitted infections and interact with others that aim to be sexually responsible.  
+Contribution:
+Development of Website.
+Development of admin panel and API’s for the app
+
+ini_set("display_errors", "1");
+error_reporting(E_ALL);
+Remove special characters
+$specialCahr = array("&", "?", "#","!","@","$","%","*","^","(",")","<",">","?","/",":",";","'","[","]","+","=","-","_",",",'"');
+$onlyconsonants = str_replace($specialCahr, "", $_POST['item_name']);
+
+************************************************************************
+script for check all check boxes
+<input type="checkbox" name="CheckAll" id="box1" class="CheckAll" value="Y">
+<label for="box1"></label>
+foreach(){
+    <input type="checkbox" id="boxe<?php echo $i;?>" class="cb" name="chkDel[]" value="<?php echo $usrCampaign['id'];?>">
+									        <label for="boxe<?php echo $i;?>"></label>
+}
+<script>
+	$(function()
+	{
+		
+		$(".CheckAll").change(function(){
+		  $(".cb").prop('checked', $(this).prop("checked"));
+		});
+		  
+		  $("#btnCampDelete").click(function(e)
+		  {   var count=$('input[name="chkDel[]"]:checked').length;		
+			  
+			  if (count != 0) {
+				  return confirm("Are you sure to delete selected campaign?");
+			  } else {
+				  e.preventDefault();
+			  }	
+		  });
+	});
+</script>
+
+********************************************************************
+
+Instagram upload image code using api code
+
+<?php
+function SendRequest($url, $post, $post_data, $user_agent, $cookies) {
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://instagram.com/api/v1/'.$url);
+    curl_setopt($ch, CURLOPT_USERAGENT, $user_agent);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+
+    if($post) {
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
+    }
+
+    if($cookies) {
+        curl_setopt($ch, CURLOPT_COOKIEFILE, 'cookies.txt');            
+    } else {
+        curl_setopt($ch, CURLOPT_COOKIEJAR, 'cookies.txt');
+    }
+
+    $response = curl_exec($ch);
+    $http = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+   return array($http, $response);
+}
+
+function GenerateGuid() {
+     return sprintf('%04x%04x-%04x-%04x-%04x-%04x%04x%04x', 
+            mt_rand(0, 65535), 
+            mt_rand(0, 65535), 
+            mt_rand(0, 65535), 
+            mt_rand(16384, 20479), 
+            mt_rand(32768, 49151), 
+            mt_rand(0, 65535), 
+            mt_rand(0, 65535), 
+            mt_rand(0, 65535));
+}
+
+function GenerateUserAgent() {  
+     $resolutions = array('720x1280', '320x480', '480x800', '1024x768', '1280x720', '768x1024', '480x320');
+     $versions = array('GT-N7000', 'SM-N9000', 'GT-I9220', 'GT-I9100');
+     $dpis = array('120', '160', '320', '240');
+
+     $ver = $versions[array_rand($versions)];
+     $dpi = $dpis[array_rand($dpis)];
+     $res = $resolutions[array_rand($resolutions)];
+
+     return 'Instagram 4.'.mt_rand(1,2).'.'.mt_rand(0,2).' Android ('.mt_rand(10,11).'/'.mt_rand(1,3).'.'.mt_rand(3,5).'.'.mt_rand(0,5).'; '.$dpi.'; '.$res.'; samsung; '.$ver.'; '.$ver.'; smdkc210; en_US)';
+ }
+
+function GenerateSignature($data) {
+     return hash_hmac('sha256', $data, 'b4a23f5e39b5929e0666ac5de94c89d1618a2916');
+}
+
+function GetPostData($filename) {
+    if(!$filename) {
+        echo "The image doesn't exist ".$filename;
+    } else {
+        $post_data = array('device_timestamp' => time(), 
+                        'photo' => '@'.$filename);
+        return $post_data;
+    }
+}
+
+
+// Set the username and password of the account that you wish to post a photo to
+$username = 'kindlephilip';
+$password = 'testing2@kindle';
+$insta_id  = '1318997190';
+$access_token  = '1318997190.7ba2fda.8c9eeb2c34b142fe80b4208566ae0476';
+// Set the path to the file that you wish to post.
+// This must be jpeg format and it must be a perfect square
+$filename = 'pic/diwali1.jpeg';
+
+// Set the caption for the photo
+$caption = "Diwali celebration";
+
+// Define the user agent
+$agent = GenerateUserAgent();
+
+// Define the GuID
+$guid = GenerateGuid();
+
+// Set the devide ID
+$device_id = "android-".$guid;
+
+/* LOG IN */
+// You must be logged in to the account that you wish to post a photo too
+// Set all of the parameters in the string, and then sign it with their API key using SHA-256
+$data ='{"device_id":"'.$device_id.'","guid":"'.$guid.'","username":"'.$username.'","password":"'.$password.'","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"}';
+//$data ='{"device_id":"'.$device_id.'","guid":"'.$guid.'","access_token":"'.$access_token.'","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"}';
+//$data ='{"device_id":"'.$device_id.'","guid":"'.$guid.'","access_token":"'.$access_token.'","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"}';
+$sig = GenerateSignature($data);
+print_r($data);
+$data = 'signed_body='.$sig.'.'.urlencode($data).'&ig_sig_key_version=4';
+$login = SendRequest('accounts/login/', true, $data, $agent, false);
+print_r($login);
+//echo "<pre>"; print_r($login); die;
+if(strpos($login[1], "Sorry, an error occurred while processing this request.")) {
+    echo "Request failed, there's a chance that this proxy/ip is blocked";
+} else {            
+    if(empty($login[1])) {
+        echo "Empty response received from the server while trying to login";
+    } else {            
+        // Decode the array that is returned
+        $obj = @json_decode($login[1], true);
+        //echo "<pre>"; print_r($obj);
+        if(empty($obj)) {
+            echo "Could not decode the response: ".$body;
+        } else {
+            // Post the picture
+            $data = GetPostData($filename);
+            //$post = SendRequest('media/upload/', true, $data, $agent, true);    
+			//print_r($post);
+            if(empty($post[1])) {
+                 echo "Empty response received from the server while trying to post the image";
+            } else {
+                // Decode the response 
+                $obj = @json_decode($post[1], true);
+				//print_r($obj);
+                if(empty($obj)) {
+                    echo "Could not decode the response";
+                } else {
+                    $status = $obj['status'];
+					//echo $status;
+
+                    if($status == 'ok') {
+                        // Remove and line breaks from the caption
+                        $caption = preg_replace("/\r|\n/", "", $caption);
+
+                        $media_id = $obj['media_id'];
+                        $device_id = "android-".$guid;
+                        $data = '{"device_id":"'.$device_id.'","guid":"'.$guid.'","media_id":"'.$media_id.'","caption":"'.trim($caption).'","device_timestamp":"'.time().'","source_type":"5","filter_type":"0","extra":"{}","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"}';   
+                        $sig = GenerateSignature($data);
+                        $new_data = 'signed_body='.$sig.'.'.urlencode($data).'&ig_sig_key_version=4';
+
+                       // Now, configure the photo
+                       $conf = SendRequest('media/configure/', true, $new_data, $agent, true);
+
+                       if(empty($conf[1])) {
+                           echo "Empty response received from the server while trying to configure the image";
+                       } else {
+                           if(strpos($conf[1], "login_required")) {
+                                echo "You are not logged in. There's a chance that the account is banned";
+                            } else {
+                                $obj = @json_decode($conf[1], true);
+                                $status = $obj['status'];
+
+                                if($status != 'fail') {
+                                    echo "Success";
+                                } else {
+                                    echo 'Fail';
+                                }
+                            }
+                        }
+                    } else {
+                        echo "Status isn't okay";
+                    }
+                }
+            }
+        }
+    }
+}
+
+********************************************************************
+
+	<!-- before page loader css -->
+	<style>
+	  /* Paste this css to your style sheet file or under head tag */
+	  /* This only works with JavaScript,
+	  if it's not present, don't show loader */
+	  .no-js #loader { display: none;  }
+	  .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+	  .se-pre-con {
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background: url(../assets/images/loader/Preloader_8.gif) center no-repeat #fff;
+	  }
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<!--//paste this code under head tag or in a seperate js file.
+	// Wait for window load-->
+	<script>
+	  $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	  });
+	</script>
+    <!-- use this div just after the body tag to show the loader -->
+    <div class="se-pre-con"> </div>
+************************************************************************
+pd command: gksudo nautilus
+
+************************************************************************
+
+ffmpeg script
+
+<?php
+
+try {
+    if(shell_exec("ffmpeg -i vid.mov -vcodec h264 -acodec aac -strict -2 hello.mp4")){
+        echo "success";
+    }
+} 
+catch (Exception $e){
+    echo $e->getMessage();
+}
+
+************************************************************************
+
+<?php
+//script for saving or download the database
+//https://github.com/tazotodua/useful-php-scripts
+EXPORT_TABLES("localhost", "database_username", "password", "database_name");
+
+function EXPORT_TABLES($host, $user, $pass, $name, $tables = false, $backup_name = false) {
+    $mysqli = new mysqli($host, $user, $pass, $name);
+    $mysqli->select_db($name);
+    $mysqli->query("SET NAMES 'utf8'");
+    $queryTables = $mysqli->query('SHOW TABLES');
+    while ($row = $queryTables->fetch_row()) {
+        $target_tables[] = $row[0];
+    } if ($tables !== false) {
+        $target_tables = array_intersect($target_tables, $tables);
+    }
+    foreach ($target_tables as $table) {
+        $result = $mysqli->query('SELECT * FROM ' . $table);
+        $fields_amount = $result->field_count;
+        $rows_num = $mysqli->affected_rows;
+        $res = $mysqli->query('SHOW CREATE TABLE ' . $table);
+        $TableMLine = $res->fetch_row();
+        $content = (!isset($content) ? '' : $content) . "\n\n" . $TableMLine[1] . ";\n\n";
+        for ($i = 0, $st_counter = 0; $i < $fields_amount; $i++, $st_counter = 0) {
+            while ($row = $result->fetch_row()) { //when started (and every after 100 command cycle):
+                if ($st_counter % 100 == 0 || $st_counter == 0) {
+                    $content .= "\nINSERT INTO " . $table . " VALUES";
+                }
+                $content .= "\n(";
+                for ($j = 0; $j < $fields_amount; $j++) {
+                    $row[$j] = str_replace("\n", "\\n", addslashes($row[$j]));
+                    if (isset($row[$j])) {
+                        $content .= '"' . $row[$j] . '"';
+                    } else {
+                        $content .= '""';
+                    } if ($j < ($fields_amount - 1)) {
+                        $content.= ',';
+                    }
+                }
+                $content .=")";
+                //every after 100 command cycle [or at last line] ....p.s. but should be inserted 1 cycle eariler
+                if ((($st_counter + 1) % 100 == 0 && $st_counter != 0) || $st_counter + 1 == $rows_num) {
+                    $content .= ";";
+                } else {
+                    $content .= ",";
+                } $st_counter = $st_counter + 1;
+            }
+        } $content .="\n\n\n";
+    }
+    // $backup_name = $backup_name ? $backup_name : $name."___(".date('H-i-s')."_".date('d-m-Y').")__rand".rand(1,11111111).".sql";
+    //  header('Content-Type: application/octet-stream');   header("Content-Transfer-Encoding: Binary"); header("Content-disposition: attachment; filename=\"./".$backup_name."\"");  echo $content; exit;
+    $fname = date("Y-m-d-H-i-s") . '.sql';
+    $filename = fopen('./db_backup/' . $fname, 'w+');
+    fwrite($filename, $content);
+    fclose($filename);
+    echo "succcessfuly database download";
+}
+
+?>
+
+
+
+************************************************************************
+new: 1609264622674385
+android : 1609264622674385
+iphone : 1609264622674385
+john haa web: 1601556116778569
+************************************************************************
+
+Facebook developer
+fearfactor06@icloud
+fearfactor06icloud
+ 
+Instagram
+adavis@justbeentested.com
+wes1906
+ 
+Flurry by yahoo
+adavis@justbeentested.com
+ !yahoo03
+ 
+Twitter
+justbeentested
+ twitter03
+[13:01:43] Anshul Sharma: https://developers.facebook.com/apps/939086759475776/settings/
+
+
+************************************************************************
+sudo apt-get install geany-plugin-geany-plugin-addons
+2038948887
+7fa8282ad93047a4d6fe6111c93b308a
+96e79218965eb72c92a549dd5a330112
+************************************************************************
+user_id:117: mobile no: "2392475844" "ac02fa9f55e6d9d6049a309f741aa9cd" "ac02fa9f55e6d9d6049a309f741aa9cd" Mark Morris
+user_id:118: mobile no: "2392475890" "2362475890" "deb97a759ee7b8ba42e02dddf2b412fe" kram test
+************************************************************************
+
+ajax to laod the page in background and get the result or response
+
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
+    <script type="text/javascript">
+		function addMassPayment() {
+			var p=[];
+			var aa = [];
+			/*$('input.cb').each( function() {
+				if($(this).attr('checked')) {
+					p.push($(this).attr('value'));
+				}
+			} );*/
+			$('input.cb').each( function() {
+				if ($(this).is(":checked"))
+				{
+					aa.push($(this).val());
+					//aa = $("input.cb").val();
+				}
+			} );	
+			//alert(aa);
+			//var p='hello';
+			$.ajax( {
+				url:'process.php',
+				type:'POST',
+				data: {list:aa},
+				success: function(res) {
+					alert(res);
+					//$("#showPaymentStatus").html(res);
+				}
+			});
+		}
+	</script>
+
+<span id="showRiskQuesOption"></span>
+<script>
+	function getLifeQuesOption(queId)
+	{    
+		var lifeQuesId = document.getElementById("lifeQues").value;
+		var dataString = 'queId='+ queId;	
+		$.ajax({
+			type: "POST",
+			url: "testReportAjax.php",
+			data: dataString,
+
+			success: function(data) {
+				$("#showQuesOption").html(data);
+			}
+		});
+		return true;
+	}
+</script>
+
+<script>
+	function getRiskQuesOption(queNo)
+	{    
+		//var lifeQuesId = document.getElementById("lifeQues").value;
+		var dataString = 'queNo='+ queNo;	
+		$.ajax({
+			type: "POST",
+			url: "testReportRiskAjax.php",
+			data: dataString,
+
+			success: function(data) {
+				$("#showRiskQuesOption").html(data);
+			}
+		});
+		return true;
+	}
+</script>
+************************************************************************
+
+jquery load function for other file 
+
+<!-- Script to sent the notification to all the app user-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		//var str = document.getElementById("msg").value;
+		$('#main').load('eventNotiAjax.php?q=<?php echo $clubid; ?>');
+	});
+</script>
+<!-- Script to sent the notification to all the app user-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var str = document.getElementById("msg").value;
+		$('#main').load('sentNotiAjax.php?q='+encodeURIComponent(str));
+	});
+</script>
+
+************************************************************************
+
+$date1 = "2007-03-24";
+$date2 = "2009-06-26";
+
+$diff = abs(strtotime($date2) - strtotime($date1));
+
+$years = floor($diff / (365*60*60*24));
+$months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+$days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+
+printf("%d years, %d months, %d days\n", $years, $months, $days);
+
+************************************************************************
+Trim the phone no and special characters
+if(!empty($phn)){
+			//remove the special characters and extra number from the phone no
+			$phonE = preg_replace('/(\W*)/', '', $phn);
+			$phoneLen = strlen($phonE);
+			$diff = $phoneLen-10;
+			$phone = substr($phone,$diff,$phoneLen);
+		}else{
+			$phone = "";
+		Z29vZ2xlQCMxMjM=}
+
+************************************************************************
+
+
+<?php
+$msg = array();
+if (isset($_FILES["file"]["type"])) {
+    $validextensions = array(
+        "jpeg",
+        "jpg",
+        "JPG"
+    );   
+    $temporary       = explode(".", $_FILES["file"]["name"]);
+    $file_extension  = end($temporary);    
+    if ((($_FILES["file"]["type"] == "image/jpg") || ($_FILES["file"]["type"] == "image/jpeg")) && in_array($file_extension, $validextensions)) {
+        if ($_FILES["file"]["error"] > 0) {           
+            $msg['status'] = "invalid_image";                    
+            echo json_encode($msg);
+        } else {
+                $rnimg = substr(str_shuffle("abcdefghijklmnopqrstuvwxyz"), 0, 4);
+                $sourcePath = $_FILES['file']['tmp_name']; // Storing source path of the file in a variable
+                list($width, $height) = getimagesize($sourcePath);
+                $targetPath = "upload/temp/" . $rnimg.$_FILES['file']['name']; // Target path where file is to be stored
+                if(move_uploaded_file($sourcePath, $targetPath)){                    
+                    $msg['status'] = "uploaded";
+                    $msg['file_path'] = $targetPath;
+                    $msg['file_type'] = $_FILES["file"]["type"];
+                    $msg['file_size'] = $_FILES["file"]["size"] / 1024 ." KB";                  
+                    $msg['file_dimen']= $width." X ".$height;
+                    echo json_encode($msg);
+                } else {                    
+                    $msg['status'] = "upload_error";                    
+                    echo json_encode($msg);
+                }                
+        }
+    } else {
+        $msg['status'] = "invalid_image";              
+        echo json_encode($msg);
+    }
+} else {
+    $msg['status'] = "fatal_error";                    
+    echo json_encode($msg);
+}
+
+Email attachment code
+<?php 
+// Settings
+include_once('../config.php');
+if(isset($_POST['submit'])){
+	$uplaodFile = "";
+	if(is_uploaded_file($_FILES['uplaodFile']['tmp_name'])){
+		$rnimg = substr(str_shuffle("abcdefghijklmnopqrstuvwxyz"), 0, 4);
+		$uplaodFile = $rnimg.$_FILES['uplaodFile']['name'];
+		$uplaodFile = str_replace(" ", "", $uplaodFile);
+		move_uploaded_file($_FILES['uplaodFile']['tmp_name'],UPLOAD.$uplaodFile);
+		// *** Include the class
+		// *** 2) Resize image (options: exact, portrait, landscape, auto, crop)
+		/*include("resize-class.php");
+		$resizeObj = new resize("./images/bigimg/$image_name");
+		$resizeObj -> resizeImage(640, 640, 'exact');
+		$resizeObj -> saveImage("./images/$image_name", 100);*/
+	}else{
+		$uplaodFile = "";
+	}
+    $name = "Name goes here";
+    $email = "sandeep.verma@kindlebit.com";
+    $to = "$name <$email>";
+    $from = "John-Smith ";
+    $subject = "Here is your attachment";
+    $mainMessage = "Hi, here's the file.";
+    //$fileatt = "./test.pdf";
+    //echo $fileatt = UPLOADD.$uplaodFile;
+    $fileatt = '../upload/'.$uplaodFile;
+    //$fileatt = 'http://pattannco.com/projects/SansRide/upload/xthntest.pdf';
+    //echo $fileatt = file_get_contents(UPLOADD.'xthntest.pdf');
+    $fileatttype = "application/pdf";
+    $fileattname = "newName.pdf";
+    $headers = "From: $from";
+    // File
+    $file = fopen($fileatt, 'rb');
+    $data = fread($file, filesize($fileatt));
+    fclose($file);
+    // This attaches the file
+    $semi_rand = md5(time());
+    $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
+    $headers .= "\nMIME-Version: 1.0\n" .
+    "Content-Type: multipart/mixed;\n" .
+    " boundary=\"{$mime_boundary}\"";
+    $message = "This is a multi-part message in MIME format.\n\n" .
+    "-{$mime_boundary}\n" .
+    "Content-Type: text/plain; charset=\"iso-8859-1\n" .
+    "Content-Transfer-Encoding: 7bit\n\n" .
+    $mainMessage . "\n\n";
+    $data = chunk_split(base64_encode($data));
+    $message .= "--{$mime_boundary}\n" .
+    "Content-Type: {$fileatttype};\n" .
+    " name=\"{$fileattname}\"\n" .
+    "Content-Disposition: attachment;\n" .
+    " filename=\"{$fileattname}\"\n" .
+    "Content-Transfer-Encoding: base64\n\n" .
+    $data . "\n\n" .
+    "-{$mime_boundary}-\n";
+    // Send the email
+    if(mail($to, $subject, $message, $headers)) {
+		echo "The email was sent.";
+    }
+    else {
+		echo "There was an error sending the mail.";
+    }
+}
+?>
+<html>
+<head>
+
+</head>
+<body>
+<form action="" method="post" enctype="multipart/form-data">
+	<label> Attach File </label>
+	<input type = "file" name = "uplaodFile">
+	<input type = "submit" name = "submit" value = "Upload">
+</form>
+</body>
+</html>
+
+************************************************************************
+
+Driver Profile Info + Ride Information with Statuses
+[11:20:56] Kanwar Singh: Admin Login, Settings, Manage Users (User Type), View Payment Status
+[11:20:59] Kanwar Singh: [06/08/2015 12:42:48 PM] Kanwar Singh: Driver Approaching 
+Ready for Pickup
+Dropped Child 
+Ride Payment Request
+Payment Done
+Ride Completed
+Confirmed Ride
+
+<<< 
+
+
+************************************************************************
+Php Season
+https://phpseason.wordpress.com/
+************************************************************************
+script for refresh the div
+
+<?php 
+	$logoutStatus = $adminData['online_status'];
+	$adminID = $adminData['id'];
+?>
+<td id="refreshStatus<?php echo $adminID ?>" class="action" style="width:175px;"><?php if($logoutStatus =="1") { ?><a style="color:#135315;" href="?id=<?php echo $adminData['id'];?>&cat=logout" title="logout" class="delete" onclick="return confirm('Are you sure, you want to logout selected driver')">logout</a><?php } ?> </td>					
+<!-- code for refresh the logout status-->
+<script type="text/javascript" src= "http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js" > </script>
+<script type="text/javascript">
+	var auto_refresh = setInterval(
+	function ()
+	{
+		$('#refreshStatus<?php echo $adminID ?>').load('loadLogoutStatus.php?q=<?php echo $adminData['id']; ?>');
+	}, 5000); // refresh every 5000 milliseconds
+</script>
+loadLogoutStatus.php file:
+<?php
+include_once("../config.php");
+require_once(CLASSES . 'FwConnection.php');
+require_once(FUNCTIONS . 'function.php');
+require_once(CLASSES . './my_pagina_class.php');
+$DbConnection = new FwConnection(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
+$adminId=$_GET['q'];
+//$qry = mysql_query("Select id,online_status from taxi_users where user_type='driver' and id=$adminId");
+$qry = mysql_query("Select id,online_status from taxi_users where id=$adminId");
+$countRows = mysql_num_rows($qry);
+$chkRefreshStatus = '';
+if($countRows>0){
+	$getStatus = mysql_fetch_assoc($qry);
+	$chkRefreshStatus = "true"; 
+	$logoutStatus = $getStatus['online_status'];
+	$adminID = $getStatus['id']; 
+	?>
+	<?php if($logoutStatus =="1") {?><a style="color:#135315;" href="?id=<?php echo $adminID;?>&cat=logout" title="logout" class="delete" onclick="return confirm('Are you sure, you want to logout selected driver')">logout</a><?php } ?>
+	<?php
+}else{
+	//echo '<td id="refreshStatus" class="action" style="width:175px;"> </td>';
+}
+?>
+
+************************************************************************
+//function for admin to set the active class for active page
+function pageActive($page)
+{
+	if(basename($_SERVER['SCRIPT_NAME'])==$page)
+	{
+		return 'class="pageactive"';
+	}
+	else
+	{
+		return '';
+	}
+}
+
+************************************************************************
+code for image zoom
+
+<style>
+	img 
+	{
+		/*display: block;*/
+		transition:all 0.25s ease;
+	}
+
+	.box:hover img 
+	{
+		-webkit-transform:scale(3.25);
+		-moz-transform:scale(3.25);
+		-webkit-transform-origin:-20px;
+		-moz-transform-origin:-20px;
+	}
+</style>
+
+************************************************************************
+SELECT winner.manu_id,winner.model_id,winner.color_id,user_submission.user_id,users.id,users.username 
+FROM winner
+INNER JOIN user_submission ON winner.manu_id = user_submission.manu_id and winner.model_id = user_submission.model_id 
+and winner.color_id = user_submission.color_id
+INNER JOIN users ON user_submission.user_id=users.id
+
+SELECT winner.manu_id,winner.model_id,winner.color_id,user_submission.user_id,users.usesrname
+FROM winner T1
+INNER JOIN user_submission T2 ON T1.manu_id = T2.manu_id and T1.model_id = T2.model_id and T1.color_id = T2.color_id 
+INNER JOIN users T3 ON T2.user_id=T3.id
+************************************************************************
+	Base64_encode image form store byte array
+	$Image = input_val($jsonResult['Image']);
+    $date_time = date('Y-m-d H:i:s');
+    
+    $var=substr(str_shuffle("abcdefghijklmnopqrstuvwxyz"), 0, 10);
+	$var=$var.".jpg";
+	$path= PROFILES .$var;
+    $ifp = fopen($path, "wb"); 
+	fwrite($ifp, base64_decode($Image));
+	fclose($ifp);  
+	chmod($ifp, 0777);
+
+    OR
+        $uploaded_Image  = md5(rand() * time()) . ".mp4";
+        $file_data = base64_decode($_POST['video']);
+        $file = Yii::app()->params['itemuploadfolder'].$uploaded_Image;
+        $success = file_put_contents($file, $file_data);
+*********************************************************************
+Code for displaying stats in php
+//url: http://www.qualitycodes.com/tutorial.php?articleid=20&title=How-to-create-bar-graph-in-PHP-with-dynamic-scaling
+<?php
+	# ------- The graph values in the form of associative array
+	$values=array(
+		"Jan" => 110,
+		"Feb" => 130,
+		"Mar" => 215,
+		"Apr" => 81,
+		"May" => 310,
+		"Jun" => 110,
+		"Jul" => 190,
+		"Aug" => 175,
+		"Sep" => 390,
+		"Oct" => 286,
+		"Nov" => 150,
+		"Dec" => 196
+	);
+
+ 
+	$img_width=450;
+	$img_height=300; 
+	$margins=20;
+
+ 
+	# ---- Find the size of graph by substracting the size of borders
+	$graph_width=$img_width - $margins * 2;
+	$graph_height=$img_height - $margins * 2; 
+	$img=imagecreate($img_width,$img_height);
+
+ 
+	$bar_width=20;
+	$total_bars=count($values);
+	$gap= ($graph_width- $total_bars * $bar_width ) / ($total_bars +1);
+
+ 
+	# -------  Define Colors ----------------
+	$bar_color=imagecolorallocate($img,0,64,128);
+	$background_color=imagecolorallocate($img,240,240,255);
+	$border_color=imagecolorallocate($img,200,200,200);
+	$line_color=imagecolorallocate($img,220,220,220);
+ 
+	# ------ Create the border around the graph ------
+
+	imagefilledrectangle($img,1,1,$img_width-2,$img_height-2,$border_color);
+	imagefilledrectangle($img,$margins,$margins,$img_width-1-$margins,$img_height-1-$margins,$background_color);
+
+ 
+	# ------- Max value is required to adjust the scale	-------
+	$max_value=max($values);
+	$ratio= $graph_height/$max_value;
+
+ 
+	# -------- Create scale and draw horizontal lines  --------
+	$horizontal_lines=20;
+	$horizontal_gap=$graph_height/$horizontal_lines;
+
+	for($i=1;$i<=$horizontal_lines;$i++){
+		$y=$img_height - $margins - $horizontal_gap * $i ;
+		imageline($img,$margins,$y,$img_width-$margins,$y,$line_color);
+		$v=intval($horizontal_gap * $i /$ratio);
+		imagestring($img,0,5,$y-5,$v,$bar_color);
+
+	}
+ 
+ 
+	# ----------- Draw the bars here ------
+	for($i=0;$i< $total_bars; $i++){ 
+		# ------ Extract key and value pair from the current pointer position
+		list($key,$value)=each($values); 
+		$x1= $margins + $gap + $i * ($gap+$bar_width) ;
+		$x2= $x1 + $bar_width; 
+		$y1=$margins +$graph_height- intval($value * $ratio) ;
+		$y2=$img_height-$margins;
+		imagestring($img,0,$x1+3,$y1-10,$value,$bar_color);
+		imagestring($img,0,$x1+3,$img_height-15,$key,$bar_color);		
+		imagefilledrectangle($img,$x1,$y1,$x2,$y2,$bar_color);
+	}
+	header("Content-type:image/png");
+	imagepng($img);
+?>
+
+********************************************************************
+code for disable the back window until u don't fill the pop up text right
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+function done() { 
+    document.getElementById("popup").style.display = "none";
+    
+    var password = document.getElementById("pass").value;
+    var verpwd = document.getElementById("passver").value;
+	
+    if(password==verpwd)
+	{
+		var element = document.getElementById('data');
+		element.style.opacity = "1.0";
+		$("#data *").attr("disabled", false);
+	}else{
+		alert('Wrong Password');
+		repeat();
+	}
+
+};
+function repeat()
+{
+	var element = document.getElementById('data');
+		element.style.opacity = "0.2";
+     document.getElementById("popup").style.display = "block";
+     $("#data *").attr("disabled", "disabled");
+}
+</script>
+<script>
+$(document).ready(function() {
+	var element = document.getElementById('data');
+		element.style.opacity = "0.2";
+     document.getElementById("popup").style.display = "block";
+     $("#data *").attr("disabled", "disabled");
+});
+
+</script>
+
+
+<div id="popup">
+	<?php 
+	$verfic_pwd = mysql_fetch_assoc(mysql_query("select verification_frm_pwd from admin where id=1"));
+	
+	$pwdver = $verfic_pwd['verification_frm_pwd'];
+	?>
+	
+	<div style="color:#fff">Enter JBT Password:</div>
+	<input id="pass" type="password" style="width:200px"/>
+	<input id="passver" type="hidden" value="<?php echo $pwdver;?>"/>
+	<button onclick="done()" class="pwd-button">Submit</button>    
+   
+</div>
+
+**********************************************************************
+<script type="text/javascript">
+		$(function(){
+    $('#validation').click(function(){
+      var file = $('input[type="file"]').val();
+      var exts = ['jpg','jpeg','gif','bmp'];
+      // first check if file field has any value
+      if ( file ) {
+        // split file name at dot
+        var get_ext = file.split('.');
+        // reverse name to check extension
+        get_ext = get_ext.reverse();
+        // check file type is valid as given in 'exts' array
+        if ( $.inArray ( get_ext[0].toLowerCase(), exts ) > -1 ){
+          alert( 'Allowed extension!' );
+        } else {
+          alert( 'Invalid file!' );
+        }
+      }
+    });
+  });
+</script>
+********************************************************************
+Your first Twilio phone number.
++1 (312) 800-1439
+******************************************************************
+http://jsfiddle.net/gabrieleromanato/QWQdz/
+*********************************************************************************
+Image,video and audio browser extension for uploading
+
+h1 { font-size: 1em; margin:1em 0; }
+h1 ~ h1 { border-top: 1px solid #ccc; padding-top: 1em; }
+
+<h1>Match all image files (image/*)</h1>
+<p><label>image/* <input type="file" accept="image/*"></label></p>
+
+<h1>Match all video files (video/*)</h1>
+<p><label>video/* <input type="file" accept="video/*"></label></p>
+
+<h1>Match all audio files (audio/*)</h1>
+<p><label>audio/* <input type="file" accept="audio/*"></label></p>
+
+<h1>Match all image files (image/*) and files with the extension ".someext"</h1>
+<p><label>.someext,image/* <input type="file" accept=".someext,image/*"></label></p>
+
+<h1>Match all image files (image/*) and video files (video/*)</h1>
+<p><label>image/*,video/* <input type="file" accept="image/*,video/*"></label></p>
+
+****************************************************************************
+$(body).append('<div style="display:none"><iframe src="https://instagram.com/accounts/logout/" width="0" height="0"></iframe></div>');
+*************************************************
+Just been tested
+Twitter credential for twitter login
+Consumer key: * 'rLgdUHRwiqFBfkxVX7W2v0yce'
+Consumer secret: * 'mtvYA7xbkO0preM3kFoFzEWtvtSgPeAV0O1O15Q3yluT1tPqhh'
+Access token: '2711311818-sbVwAQRVvLNoLxZvwfQgSKnfV20u8UGTU3lyAag'
+Access token secret: 'ZzMddkBca6T0sePnN0M0UpzgR81Z5vViJQmh4gbVTVhby'
+ username: parveenkndl
+ password: parveen123
+*******************************************************************
+code for Loading page before opening
+<link href="css/introLoader.css" rel="stylesheet">
+<div id="element" class="introLoading"></div>
+/********* Start introLoader.css**********/
+/* Generated by less 2.2.0 */
+/*
+ *  jQueryIntroLoader
+ *  Animated intro loading pages
+ *  http://factory.brainleaf.eu/jqueryIntroLoader
+ *
+ *  Made by BRAINLEAF Communication (c)2014-2015
+ *  Under GNU/GPL License
+ */
+/* ****************************************************************************** */
+/* PLUGIN STYLE */
+/* ****************************************************************************** */
+/* ============================================================================== */
+/* Global Style */
+/* ============================================================================== */
+.introLoader,
+.introLoading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 9999;
+}
+.introLoading {
+  background:url(../images/circle-simple_light.gif) no-repeat center center #fff;
+}
+.absolute.introLoader {
+  position: absolute;
+}
+body.introLoader_preventScroll {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+ body.pace-done #element{ display:none !important;}
+/********* End introLoader.css**********/
+******************************************************************************************
+jquery for table data to excel 
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"> </script>
+// work only for mozilla
+<!--<script> 
+	$("#btnExport").click(function(e) {
+		window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('#ExportReportData').html()));
+		e.preventDefault();
+	});
+</script>-->
+//for mozilla and chrome browser
+<script>
+	$(document).ready(function () {
+
+		function exportTableToXls(filename) {
+			// Data URI
+			exportData = 'data:application/vnd.ms-excel,' + encodeURIComponent($('#ExportReportData').html());
+
+			$(this).attr({
+				'download': filename,
+				'href': exportData,
+				'target': '_blank'
+			});
+		}
+
+		// This must be a hyperlink
+		$(".export").on('click', function (event) {
+			// xls
+			exportTableToXls.apply(this,['jbtReport.xls']);
+			//event.preventDefault();
+			
+			// IF CSV, don't do event.preventDefault() or return false
+			// We actually need this to be a typical hyperlink
+		});
+	});
+</script>
+
+
+
+********************************************************************************
+function video_image($url){
+    $image_url = parse_url($url);
+    if($image_url['host'] == 'www.youtube.com' || $image_url['host'] == 'youtube.com')
+    {
+		$array = explode("&", $image_url['query']);
+		return "http://img.youtube.com/vi/".substr($array[0], 2)."/0.jpg";
+    } else if($image_url['host'] == 'www.youtu.be' || $image_url['host'] == 'youtu.be'){
+		$array = explode("be/", $url);
+        return "http://img.youtube.com/vi/".$array[1]."/0.jpg";
+    }	
+
+}
+******************************************************************************
+Important links
+
+
+    http://simple.wikipedia.org/wiki/List_of_countries_by_population
+    http://india.gov.in/my-government/whos-who/governors
+    http://india.gov.in/my-government/whos-who/chief-ministers
+
+****************************************************************************
+Inner Join Query
+
+SELECT risk_Assessment_questions.user_id,testee_feed.testee_id from risk_Assessment_questions INNER JOIN testee_feed ON risk_Assessment_questions.user_id = testee_feed.testee_id where risk_Assessment_questions.user_id in (387,391,415) and testee_feed.testee_id in (387,391,415) and risk_Assessment_questions.__posted__ >= '2015-01-06' and risk_Assessment_questions.__posted__ <= '2015-04-20' and testee_feed.posted_date >= '2015-01-06' and testee_feed.posted_date <= '2015-04-20' group by testee_feed.testee_id
+******************************************************************************
+code for image file extension
+ <!-- Load jQuery and the validate plugin -->
+<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script><!-- jquery file for validating image extensions -->
+<script>
+  // When the browser is ready...
+  $(function() {
+	// Setup form validation on the #log-in element
+	$("#sponsorinfo").validate({
+		// Specify the validation rules
+		rules: 
+		{  
+			name:
+			{
+				required:true,
+			},
+			email:
+			{
+			 email: true,
+			 required: true,
+			 remote: "chkUsrNamEmail.php?data=email&type=sponsor"
+			},
+			username:
+			{
+			 required: true,
+			 remote: "chkUsrNamEmail.php?data=username&type=sponsor"
+			},
+			password:
+			{
+				required: true,
+				minlength: 6
+			},
+			conPassword:
+			{
+				equalTo: "#password"
+			},
+			phone: {
+                number: true
+            },
+            logo : {
+				extension: "jpg|jpeg|gif|png"
+			}
+		},
+		// Specify the validation error messages
+		messages: {
+			name:
+			{
+				required:"This field is required." 
+			},
+			password:    {
+				required: "This field is required.",
+				minlength: "Password should be minimum 6 characters"
+			},					  
+			email :{
+			   required : "This field is required.",
+			   email : "Enter valid Email Id",
+			   remote: "Email id already exists"
+			},
+			username :{
+			   required : "This field is required.",
+			   remote: "User Name already exists",
+			},
+			conPassword :
+			{
+				
+				required : "This field is required.",
+				conPassword:"Confirm Password did not match",
+							
+				},
+			phone: {
+				number : "Phone number must contain digits only"
+            },
+            logo: {
+				extension : "You must upload an image file."
+			}
+		},
+		submitHandler: function(form) {
+			form.submit();
+		}
+		
+	});
+
+  });
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+function validate()
+{
+	var extensions = new Array("jpg","jpeg","gif","png","bmp");
+	var image_file = document.createAd.thumbnail.value;
+	var image_length = document.createAd.thumbnail.value.length;
+	
+	var pos = image_file.lastIndexOf('.') + 1;
+	var ext = image_file.substring(pos, image_length);
+	var final_ext = ext.toLowerCase();
+	for (i = 0; i < extensions.length; i++)
+	{
+		if(extensions[i] == final_ext)
+		{
+		return true;
+		}
+	}
+ 
+	alert("You must upload an image file with one of the following extensions: "+ extensions.join(', ') +".");
+	return false;
+}
+</SCRIPT>
+
+**************************************************************************
+SELECT * FROM `circular` WHERE date >= DATE_SUB(CURDATE(), INTERVAL 100 DAY)
+code for age count using dob
+			//Calculate date year 
+			if($rowRecord['birthday']!='' and $rowRecord['birthday']!='null'){
+				$birthyear = date('Y-m-d', strtotime($rowRecord['birthday']));
+				$todatdate = date('Y-m-d');
+				$date1 = date_create($birthyear);
+				$date2 = date_create($todatdate);
+				$calculate_year_diff = date_diff($date1, $date2);
+				$calculate_year = $calculate_year_diff->y;	
+				//$calculate_year = date('Y')-$birthyear;
+				if($calculate_year<=90){
+					$data['age'] = (string) $calculate_year;
+				}else{
+					$data['age'] = "";
+				}	
+			}else{
+				$data['age'] = "";
+			}		
+			//close calculte year	
+From table calculate dob
+//SELECT id,first_name,dob FROM table_name where YEAR(CURDATE()) - YEAR(dob) >26 and YEAR(CURDATE()) - YEAR(dob)<50;
+*************************************************************************************
+code for date format and made link non clickable before completing one step(jquery)
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <!-- Load jQuery and the validate plugin -->
+<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script> <!-- jquery file for validating image extensions -->
+<!-- date time picker -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+<!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+<!-- date time picker -->
+<script>
+	$(document).ready(function(){
+		$("#dob").datepicker({
+			dateFormat: "mm/dd/yy",
+			changeMonth: true,
+			changeYear: true,
+            yearRange: '1900:2015',
+			maxDate: '0'
+		});
+	});
+</script>
+<script>
+$(document).ready(function()
+{
+	$('#lifestyle_assessment').removeAttr('href','false');
+	$('#verification_frm').removeAttr('href','false');
+	$('#risk_assessment').removeAttr('href','false');
+	$('#logout').removeAttr('href','false');
+	//$('#login').removeAttr('href','false');
+	$('#updateProfile').removeAttr('href','false');
+	/*$('#lifestyle_assessment').click(function()
+	{
+		return false;
+		});
+	$('#risk_assessment').click(function()
+	{
+		return false;
+		});
+	$('#profile').click(function()
+	{
+		return false;
+		});
+		$('#logout').click(function()
+	{
+		return false;
+		});*/
+});
+</script>  
+
+*******************************************************************
+$ip = $_REQUEST['REMOTE_ADDR']; // the IP address to query
+$query = @unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
+echo $country=$query['country'];
+print_r($query);
+********************************************************************
+eventsbegin facebook login credentials
+App id: 674494402660337
+App Secret: 2854e0fe2bd47b993c413fd79080d14d
+
+*************************************************************************
+//creating a date object
+$date3 = date_create('03-03-2015 12:20:12 AM');
+//creating a date object
+
+************************************************************************
+
+query for fetching data datewise like today,week days, this month
+
+Today : select * from user_handshake where handshake_date >= CURRENT_DATE AND handshake_date <= CURRENT_DATE + INTERVAL 1 day
+
+yesterday: select * from user_handshake WHERE handshake_date BETWEEN DATE_ADD(CURDATE(), INTERVAL -2 day) AND DATE_ADD(CURDATE(), INTERVAL -1 day)
+
+This week : select * from user_handshake where handshake_date BETWEEN DATE_ADD(CURDATE(), INTERVAL 1-DAYOFWEEK(CURDATE()) DAY) AND DATE_ADD(CURDATE(), INTERVAL 7-DAYOFWEEK(CURDATE()) DAY)
+
+This month : select * from user_handshake where handshake_date BETWEEN DATE_SUB(CURDATE(), INTERVAL (DAY(CURDATE())-1) DAY) AND LAST_DAY(NOW())
+Date difference code
+ echo date('Y-m-d H:i:s', strtotime("-30 days"));
+  $past_date = strtotime('2016-01-20 10:18:15');
+ //echo date($past_date, strtotime("3 days"));
+ echo $aa = date('Y-m-d H:i:s', strtotime("+30 days",$past_date));
+**
+ * Calculate the difference between two dates using date_diff()
+ * 
+ */
+
+$date1 = "2007-03-24";
+$date2 = "2009-06-26";
+
+$diff = abs(strtotime($date2) - strtotime($date1));
+
+$years = floor($diff / (365*60*60*24));
+$months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+$days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+
+printf("%d years, %d months, %d days\n", $years, $months, $days);
+
+
+     $now = time(); // or your date as well
+     $your_date = strtotime("2010-01-01");
+     $datediff = $now - $your_date;
+     echo floor($datediff/(60*60*24));
+
+
+//creating a date object
+echo $curr_date = date('Y-m-d h:i:s A');
+$date1 = date_create($curr_date);
+//creating a date object
+$date2 = date_create('20-03-2015 10:50:34 PM');
+//$date4 = date('d-m-Y h:i:s A');
+//calculating the difference between dates
+//the dates must be provided to the function as date objects that's why we were setting them 
+//as date objects and not just as strings
+//date_diff returns an date object wich can be accessed as seen below
+$diff12 = date_diff($date1, $date2);
+
+//accesing days
+echo $days = $diff12->d;
+//accesing months
+echo $months = $diff12->m;
+//accesing years
+echo $years = $diff12->y;
+//accesing hours
+echo $hours=$diff12->h;
+//accesing minutes
+echo $minutes=$diff12->i;
+//accesing seconds
+echo $seconds=$diff12->s;
+  
+//**code for getting the remaining time from two dates**//
+
+<?php
+//$timeFirst  = strtotime('2011-05-12 18:20:20');
+//$timeSecond = strtotime('2011-05-15 18:20:20');
+//echo $differenceInSeconds = $timeSecond - $timeFirst;
+$curr_date = strtotime(date('Y-m-d h:i:s A'));
+$future_date = strtotime('2015-06-11 06:20:20 AM');
+echo $differenceInSeconds = $future_date - $curr_date;
+?>
+
+<input type="hidden" value="3636" id= "sec" name="sec"/>
+<span id="countdown" class="timer"></span>
+<script>
+var aa = document.getElementById("sec").value;
+//var upgradeTime = 172801;
+var upgradeTime = aa;
+var seconds = upgradeTime;
+function timer() {
+    var days        = Math.floor(seconds/24/60/60);
+    var hoursLeft   = Math.floor((seconds) - (days*86400));
+    var hours       = Math.floor(hoursLeft/3600);
+    var minutesLeft = Math.floor((hoursLeft) - (hours*3600));
+    var minutes     = Math.floor(minutesLeft/60);
+    var remainingSeconds = seconds % 60;
+    if (remainingSeconds < 10) {
+        remainingSeconds = "0" + remainingSeconds; 
+    }
+    document.getElementById('countdown').innerHTML = days + "d :" + hours + "h :" + minutes + "m :" + remainingSeconds+" s Left";
+    if (seconds == 0) {
+        clearInterval(countdownTimer);
+        document.getElementById('countdown').innerHTML = "Completed";
+    } else {
+        seconds--;
+    }
+}
+var countdownTimer = setInterval('timer()', 1000);
+</script>
+//****************************////************************************//
+   
+***************************************************************************
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script>
+$(document).ready(function()
+{
+	$("input[id=delbtn]").click(function()
+	{
+	var count=$('input[name="CheckAll[]" :checked').size();
+	if(count==0)
+	{
+		return false;
+	}
+	});
+});
+
+*******************************************************************
+Getting the random rows
+	$range_result = mysql_query( " SELECT MAX(`id`) AS max_id , MIN(`id`) AS min_id FROM `ja_product` ");
+	$range_row = mysql_fetch_object( $range_result );
+	$count=0;
+	for($i=0;$i<10;)
+	{
+		if(!empty($random))
+		{
+			$random1= mt_rand( $range_row->min_id , $range_row->max_id );
+			$rand=explode(",",$random);
+			for($j=0;$j<count($rand);$j++)
+			{
+				if($rand[$j]==$random1)
+				{
+					$count++;
+				}
+			}
+			if($count==0)
+			{
+			$random =$random.",".$random1;
+			$i++;
+			}
+		}
+		else
+		{
+			$random =mt_rand( $range_row->min_id , $range_row->max_id );
+			$i++;
+		}
+	}	
+	//$result = mysql_query( " SELECT * FROM `table` WHERE `id` >= $random LIMIT 0,1 "); 
+*******************************************************************
+Code to get the middle array value at the top of array   
+$queue = array("orange", "banana");
+array_unshift($queue, "USA");
+print_r($queue);
+****************************************************************************
+Code for check box and drop down selected
+<option <?php echo $selectedHr['Morning'] ?> value="Morning"> Morning</option>
+<input type="checkbox"  name="clinicDays[]" id="clinicDays[]" <?php echo $selected['Mon'] ?> value="Mon" >Mon 		
+		$clinic_day = $rows['clinic_day'];
+		$arrayClinicDay = explode(",",$clinic_day);
+		foreach($arrayClinicDay as $selectedDay)
+		{
+            $selected[$selectedDay] = "checked";
+		//print_r($arrayClinicDay);
+		}
+		$clinic_hours = $rows['clinic_hours'];	
+		$selectedHr[$clinic_hours] = "selected";
+
+***************************************************************
+facebook sharing and slider
+
+<link rel="stylesheet" href="jquery.bxslider/jquery.bxslider.css" type="text/css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="jquery.bxslider/jquery.bxslider.js"></script>
+<script src="jquery.bxslider/jquery.bxslider.min.js"></script>
+ <script>
+$(document).ready(function(){
+  $('.slider11').bxSlider({
+    slideWidth: 100,
+    minSlides: 4,
+    maxSlides: 5,
+    slideMargin:1,
+    pager: false,
+    prevText: '',
+    nextText: ''
+  });
+});
+</script>
+	<div class="slider11">
+	<div class="slide" style="">
+		<div style="width:100%; float:left; height:70px">
+			<img src="./jquery.bxslider/a.jpg" height="70" width="100">
+		</div>
+		<div style="width:100%; float:left; height:40px; font-size:10px;margin:0px; padding-left:5px;text-align:center;">
+		</div>
+	</div>
+	<div class="slide" style="">
+		<div style="width:100%; float:left; height:70px">
+			<img src="./jquery.bxslider/a.jpg" height="70" width="100">
+		</div>
+		<div style="width:100%; float:left; height:40px; font-size:10px;margin:0px; padding-left:5px;text-align:center;">
+		</div>
+	</div>
+	<div class="slide" style="">
+		<div style="width:100%; float:left; height:70px">
+			<img src="./jquery.bxslider/a.jpg" height="70" width="100">
+		</div>
+		<div style="width:100%; float:left; height:40px; font-size:10px;margin:0px; padding-left:5px;text-align:center;">
+		</div>
+	</div>
+	<div class="slide" style="">
+		<div style="width:100%; float:left; height:70px">
+			<img src="./jquery.bxslider/a.jpg" height="70" width="100">
+		</div>
+		<div style="width:100%; float:left; height:40px; font-size:10px;margin:0px; padding-left:5px;text-align:center;">
+		</div>
+	</div>
+	<div class="slide" style="">
+		<div style="width:100%; float:left; height:70px">
+			<img src="./jquery.bxslider/a.jpg" height="70" width="100">
+		</div>
+		<div style="width:100%; float:left; height:40px; font-size:10px;margin:0px; padding-left:5px;text-align:center;">
+		</div>
+	</div>
+	<div class="slide" style="">
+		<div style="width:100%; float:left; height:70px">
+			<img src="./jquery.bxslider/a.jpg" height="70" width="100">
+		</div>
+		<div style="width:100%; float:left; height:40px; font-size:10px;margin:0px; padding-left:5px;text-align:center;">
+		</div>
+	</div>
+	</div>
+facebook share:
+
+<a href='http://www.facebook.com/share.php?u=http://web1.kindlebit.com/webservices/EcommerceApp/upload/jfzhShiva Back - Trishul.jpg'>
+<img alt='Facebook'src='http://i591.photobucket.com/albums/ss358
+/danishctc/blogres/fbook24.jpg'/></a>
+
+or
+
+<script>
+function fbs_click()
+	{u=location.href;t=document.title;window.open
+	('http://www.facebook.com/sharer.php?u='+
+	encodeURIComponent(u)+'&t='+encodeURIComponent(t),
+	'sharer','toolbar=0,status=0,width=6
+	26,height=436');return false;}
+</script>
+
+<a href="http://www.facebook.com/share.php?u=http://pattannco.com/projects/FunnGame/" onclick="return fbs_click()" target="_blank"> 
+<img src= "http://b.static.ak.fbcdn.net/images/share/facebook_share_icon.gif?8:26981" alt="" />
+
+
+
+************************************************
+//username existing jquery code
+
+<style>body{position:relative;}</style>
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+    $('#cmp_username').change(function(){ 
+        var username = $(this).val();
+        var UsernameAvailResult = $('#username_avail_result'); 
+        if(username.length > 4) { 
+            UsernameAvailResult.html('Loading..'); 
+            var UrlToPass = 'action=username_availability&username='+username;
+            $.ajax({ 
+            type : 'POST',
+            data : UrlToPass,
+            url  : 'chk_username.php',
+            success: function(responseText){ // Get the result and asign to each cases
+                if(responseText == 0){
+                    UsernameAvailResult.html('<span class="success">Username available</span>');
+                }
+                else if(responseText > 0){
+                    UsernameAvailResult.html('<span class="error">Username already taken</span>');
+                }
+                else{
+                    alert('Problem with sql query');
+                }
+            }
+            });
+        }else{
+            UsernameAvailResult.html('<span class="mini-char">Enter atleast 5 characters</span>');
+        }
+        if(username.length == 0) {
+            UsernameAvailResult.html('');
+        }
+    });
+      $('#cmp_username').keyup(function(){ 
+        var username = $(this).val();
+        var UsernameAvailResult = $('#username_avail_result'); 
+        if(username.length > 4) { 
+            UsernameAvailResult.html('Loading..'); 
+            var UrlToPass = 'action=username_availability&username='+username;
+            $.ajax({ 
+            type : 'POST',
+            data : UrlToPass,
+            url  : 'chk_username.php',
+            success: function(responseText){ // Get the result and asign to each cases
+                if(responseText == 0){
+                    UsernameAvailResult.html('<span class="success">Username available</span>');
+                }
+                else if(responseText > 0){
+                    UsernameAvailResult.html('<span class="error">Username already taken</span>');
+                }
+                else{
+                    alert('Problem with sql query');
+                }
+            }
+            });
+        }else{
+            UsernameAvailResult.html('<span class="mini-char">Enter atleast 5 characters</span>');
+        }
+        if(username.length == 0) {
+            UsernameAvailResult.html('');
+        }
+    });
+    
+        $('#email').change(function(){ 
+        var email = $(this).val();
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        var EmailAvailResult = $('#email_avail_result'); 
+        if(email.length > 4) { 
+            EmailAvailResult.html('Loading..'); 
+            var UrlToPass = 'action=email_availability&email='+email;
+            $.ajax({ 
+            type : 'POST',
+            data : UrlToPass,
+            url  : 'chk_username.php',
+            success: function(responseText){ // Get the result and asign to each cases
+                 if(responseText > 0){
+                    EmailAvailResult.html('<span class="error">Email already taken</span>');
+                }
+                 else
+			if( !emailReg.test( email ) ) {
+				 EmailAvailResult.html('<span class="mini-char">Please enter valid email</span>');
+				}   
+            }
+            });
+        }
+           else
+			if( !emailReg.test( email ) ) {
+				 EmailAvailResult.html('<span class="mini-char">Please enter valid email</span>');
+				}   
+
+        else
+        {
+            EmailAvailResult.html('<span class="mini-char">Enter atleast 5 characters</span>');
+        }
+     
+        if(email.length == 0) {
+            EmailAvailResult.html('');
+        }
+    });
+    
+      $('#email').keyup(function(){ 
+        var email = $(this).val();
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        var EmailAvailResult = $('#email_avail_result'); 
+        if(email.length > 4) { 
+            EmailAvailResult.html('Loading..'); 
+            var UrlToPass = 'action=email_availability&email='+email;
+            $.ajax({ 
+            type : 'POST',
+            data : UrlToPass,
+            url  : 'chk_username.php',
+            success: function(responseText){ // Get the result and asign to each cases
+
+               if(responseText > 0){
+                    EmailAvailResult.html('<span class="error">Email already taken</span>');
+                }
+                     else
+			if( !emailReg.test( email ) ) {
+				 EmailAvailResult.html('<span class="mini-char">Please enter valid email</span>');
+				}   
+
+            }
+            });
+        }
+         else
+			if( !emailReg.test( email ) ) {
+				 EmailAvailResult.html('<span class="mini-char">Please enter valid email</span>');
+				}   
+
+		else{
+            EmailAvailResult.html('<span class="mini-char">Enter atleast 5 characters</span>');
+        }
+        if(email.length == 0) {
+            EmailAvailResult.html('');
+        }
+    }); 
+});
+</script>
+***********************************************************************
+To install latest Firefox in Ubuntu/Linux Mint open Terminal (Press Ctrl+Alt+T) and copy the following commands in the Terminal:
+Terminal Commands:
+sudo add-apt-repository ppa:ubuntu-mozilla-security/ppa
+sudo apt-get update
+sudo apt-get install firefox
+***********************************************************
+//quiz timer 
+
+<script>
+     
+var seconds = 60;
+ 
+function secondPassed()
+{
+    var minutes = Math.round((seconds - 30)/60);
+    var remainingSeconds = seconds % 60;       //Error:Uncaught SyntaxError: Unexpected identifier
+    
+    document.getElementById("countdown").innerHTML = "Time left: "+minutes + ":" + remainingSeconds;
+    document.getElementById("time_val").value = minutes*60+remainingSeconds;
+    
+    if (seconds == 0)
+    {
+        clearInterval(countdownTimer);
+        alert("Your time is up");
+        window.location='questionAnswer.php?ans_timer=0';
+    }
+    else
+    {
+        seconds--;
+    }
+}
+  
+var countdownTimer = setInterval('secondPassed()', 1000);
+</script>
+<div id="countdown" class="timer_question"> </div>
+***********************************************************
+Some useful code :
+
+code for display the date,time like one min ago and two hours ago
+//comment display
+			$calculate_date = abs(strtotime(date('Y-m-d h:i A')) - strtotime($show['date']));
+			$getDay = intval( $calculate_date / 86400 );
+			$getHrs = intval( ( $calculate_date % 86400 ) / 3600);
+			$getMin = intval( ( $calculate_date / 60 ) % 60 );
+			$getSec = intval( $calculate_date % 60 )."s";
+
+			if($getDay==1){$getDay=$getDay."d";}
+			else{$getDay=$getDay."d";}
+
+			if($getHrs==1){$getHrs=$getHrs."h";}
+			else{$getHrs=$getHrs."h";}
+						
+			if($getMin==1){$getMin=$getMin."m";}
+			else{$getMin=$getMin."m";}		
+
+			if($getDay!=0){
+				$data['date'] =$getDay; 
+			}else if($getHrs!=0) {
+				$data['date'] = $getHrs;
+			}else if($getMin!=0) {
+				$data['date'] = $getMin;
+			}else {
+				$data['date'] =	$getSec;
+			}
+			
+			
+************************************************************************
+			//comment display
+			
+			$comment_date = abs(strtotime(date('Y-m-d h:i:s A')) - strtotime($rowRecord['comment_date']));
+			$getyr = intval( $comment_date / 31104000);
+			$getmnth = intval( $comment_date / 2592000);
+			$getDay = intval( $comment_date / 86400 );
+			$getHrs = intval( ( $comment_date % 86400 ) / 3600);
+			$getMin = intval( ( $comment_date / 60 ) % 60 );
+			$getSec = intval( $comment_date % 60 )." seconds ago";
+			
+			if($getyr==1){$getyr=$getyr." year ago";}
+			else{$getyr=$getyr." years ago";}
+
+			if($getmnth==1){$getmnth=$getmnth." month ago";}
+			else{$getmnth=$getmnth." months ago";}
+			
+			if($getDay==1){$getDay=$getDay." day ago";}
+			else{$getDay=$getDay." days ago";}
+
+			if($getHrs==1){$getHrs=$getHrs." hour ago";}
+			else{$getHrs=$getHrs." hours ago";}
+						
+			if($getMin==1){$getMin=$getMin." minute ago";}
+			else{$getMin=$getMin." minutes ago";}		
+			
+			if($getyr!=0){
+				$data1['comment_date'] =$getyr; 
+			}else if($getmnth!=0){
+				$data1['comment_date'] =$getmnth; 
+			} else if($getDay!=0){
+				$data1['comment_date'] =$getDay; 
+			}else if($getHrs!=0) {
+				$data1['comment_date'] = $getHrs;
+			}else if($getMin!=0) {
+				$data1['comment_date'] = $getMin;
+			}else {
+				$data1['comment_date'] =	$getSec;
+			}
+***************************************************************************
+code for sending mail:
+$to = 'sandeep.verma@kindlebit.com';
+	$from = 'Bible Book';
+	$subject = '***** MikeCheck Issue Report';
+	$headers = 'From: Bible Book <support@mikecheck.net>' . PHP_EOL .
+		'Reply-To: Bible Book <support@mikecheck.net>' . PHP_EOL .
+		'X-Mailer: PHP/' . phpversion();
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	$message    = "<html><body><table>
+		<tr><td>Hello&nbsp; <b>".ucwords($name).",</td></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td><b>Address:&nbsp;</b>$address</td></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td><b>City/State/Zipcode:&nbsp;</b>$city_state_zip</td></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td><b>Comments:&nbsp;</b>$comments</td></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td>Thanks,</td></tr>
+		<tr><td> Your Bible Book Friends</td></tr>
+		</table></body></html>
+		";
+	$succmail = mail($to,$subject,$message,$headers);
+	if($succmail)
+	{
+		$data['code'] ="200";
+		$data['msg'] ="Successfully Send Mail";
+	}else{
+		$data['code'] ="300";
+		$data['msg'] ="Not Send Mail!";	
+	}
+	$jsondata['response'] = $data;
+
+*************************************************************************
+code for displaying device ip address:
+<?php
+//$aa = $_SERVER['HTTP_USER_AGENT'];
+$ip = getenv('HTTP_CLIENT_IP')?:
+getenv('HTTP_X_FORWARDED_FOR')?:
+getenv('HTTP_X_FORWARDED')?:
+getenv('HTTP_FORWARDED_FOR')?:
+getenv('HTTP_FORWARDED')?:
+getenv('REMOTE_ADDR');	
+//$data['msg']="IP Address is :";
+$data['ip']=$ip;
+$jsondata['response']=$data;
+echo json_encode($jsondata);
+//print_r("IP is: ");
+//print_r("IP is : ".$ip);
+//print_r($aa);
+?>
+***************************************************************************
+query for displaying the near by objects using lat lng
+
+$select = "SELECT *, ((ACOS(SIN($lat * PI() / 180) * SIN(lat * PI() / 180) + COS($lat * PI() / 180) * COS(lat * PI() / 180) * COS(($lng - lng) * PI() / 180)) * 180 / PI()) * 60 * 1.1515) AS distance FROM ka_userOnline where user_status=1 GROUP BY id HAVING distance<=$radious";
+
+**********************************************************************************
+push_notification code:
+regId: APA91bFoQvvStPCo1y4OfnyAQI5UuJABkQMW-iofqz6Y5bum6--JZrSjsj99fU8WR99UQmYUi30kfunoTiM_sBbYoNnYzDHHbEDDFpoZlzJOLHe4aPLsHazXPo6kYNLDiom_h2B_l_tpIykO8Fhr90ScGaxO2JeNWA	
+
+******************************************************************************
+
+validation script code
+
+ <script>
+  
+  // When the browser is ready...
+  $(function() {
+  
+    // Setup form validation on the #register-form element
+    $("#register-form").validate({
+    
+        // Specify the validation rules
+        rules: {
+            term_month: "required",
+            cash_selling_price: "required",
+            address: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            username: "required",
+            password: {
+                required: true,
+                minlength: 5
+            }
+        },
+        
+        // Specify the validation error messages
+        messages: {
+            term_month: "enter term month",
+            cash_selling_price: "enter cash selling price",
+            address: "Please enter your address",
+            email: "Please enter a valid email address",
+            username: "Please enter a valid username",
+            password: {
+                required: "Please provide a password",
+                minlength: "Your password must be at least 5 characters long"
+            }
+        },
+        
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+
+  });
+  
+  </script>
+  ADD THIS CODE AT THE END OF LINE AFTER FOOTER.
+ like:  <?php get_footer(); ?>
+<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+  
+***************************************************************************
+Code for user phone avaibility in the database
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+    $('#phone').keyup(function(){ 
+        var Phone = $(this).val();
+        var UsernameAvailResult = $('#username_avail_result'); 
+        if(Phone.length > 2) { 
+            UsernameAvailResult.html('Loading..'); 
+            var UrlToPass = 'action=username_availability&phone='+Phone;
+            $.ajax({ 
+            type : 'POST',
+            data : UrlToPass,
+            url  : 'chk_username.php',
+            success: function(responseText){ // Get the result and asign to each cases
+                if(responseText == 0){
+                    UsernameAvailResult.html('<span class="success">Phone Number available</span>');
+                }
+                else if(responseText > 0){
+                    UsernameAvailResult.html('<span class="error">Phone already taken</span>');
+                }
+                else{
+                    alert('Problem with sql query');
+                }
+            }
+            });
+        }else{
+            UsernameAvailResult.html('<span class="mini-char">Enter atleast 3 characters</span>');
+        }
+        if(Username.length == 0) {
+            UsernameAvailResult.html('');
+        }
+    });
+           
+});
+</script>
+
+**********************************************************************************
+
+Check user phone number:
+
+<?php 
+	include_once("../config.php");
+	require_once(CLASSES . 'FwConnection.php');
+	require_once(FUNCTIONS . 'function.php');
+	$DbConnection = new FwConnection(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
+
+if(isset($_POST['action']) && $_POST['action'] == 'username_availability'){ // Check for the username posted
+    $phone       = htmlentities($_POST['phone']); // Get the username values
+    $check_query    = mysql_query('SELECT phone FROM taxi_users WHERE phone = "'.$phone.'" '); // Check the database
+    echo mysql_num_rows($check_query); // echo the num or rows 0 or greater than 0
+}
+
+
+?>
+***************************************************************************************
+
+jQUERY VALIDATION Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery validation plug-in - main demo</title>
+	<link rel="stylesheet" href="css/screen.css">
+	<script src="../lib/jquery.js"></script>
+	<script src="../dist/jquery.validate.js"></script>
+	<script>
+	$.validator.setDefaults({
+		submitHandler: function() {
+			alert("submitted!");
+		}
+	});
+
+	$().ready(function() {
+		// validate the comment form when it is submitted
+		$("#commentForm").validate();
+
+		// validate signup form on keyup and submit
+		$("#signupForm").validate({
+			rules: {
+				firstname: "required",
+				lastname: "required",
+				username: {
+					required: true,
+					minlength: 2,
+					number: true
+				},
+				password: {
+					required: true,
+					minlength: 5
+				},
+				confirm_password: {
+					required: true,
+					minlength: 5,
+					equalTo: "#password"
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				topic: {
+					required: "#newsletter:checked",
+					minlength: 2
+				},
+				agree: "required"
+			},
+			messages: {
+				firstname: "Please enter your firstname",
+				lastname: "Please enter your lastname",
+				username: {
+					required: "Please enter a username",
+					minlength: "Your username must consist of at least 2 characters"
+				},
+				password: {
+					required: "Please provide a password",
+					minlength: "Your password must be at least 5 characters long"
+				},
+				confirm_password: {
+					required: "Please provide a password",
+					minlength: "Your password must be at least 5 characters long",
+					equalTo: "Please enter the same password as above"
+				},
+				email: "Please enter a valid email address",
+				agree: "Please accept our policy"
+			}
+		});
+
+		// propose username by combining first- and lastname
+		$("#username").focus(function() {
+			var firstname = $("#firstname").val();
+			var lastname = $("#lastname").val();
+			if (firstname && lastname && !this.value) {
+				this.value = firstname + "." + lastname;
+			}
+		});
+
+		//code to hide topic selection, disable for demo
+		var newsletter = $("#newsletter");
+		// newsletter topics are optional, hide at first
+		var inital = newsletter.is(":checked");
+		var topics = $("#newsletter_topics")[inital ? "removeClass" : "addClass"]("gray");
+		var topicInputs = topics.find("input").attr("disabled", !inital);
+		// show when newsletter is checked
+		newsletter.click(function() {
+			topics[this.checked ? "removeClass" : "addClass"]("gray");
+			topicInputs.attr("disabled", !this.checked);
+		});
+	});
+	</script>
+	<style>
+	#commentForm {
+		width: 500px;
+	}
+	#commentForm label {
+		width: 250px;
+	}
+	#commentForm label.error, #commentForm input.submit {
+		margin-left: 253px;
+	}
+	#signupForm {
+		width: 670px;
+	}
+	#signupForm label.error {
+		margin-left: 10px;
+		width: auto;
+		display: inline;
+	}
+	#newsletter_topics label.error {
+		display: none;
+		margin-left: 103px;
+	}
+	</style>
+</head>
+<body>
+<h1 id="banner"><a href="http://jqueryvalidation.org/">jQuery Validation Plugin</a> Demo</h1>
+<div id="main">
+	<p>Default submitHandler is set to display an alert into of submitting the form</p>
+	<form class="cmxform" id="commentForm" method="get" action="">
+		<fieldset>
+			<legend>Please provide your name, email address (won't be published) and a comment</legend>
+			<p>
+				<label for="cname">Name (required, at least 2 characters)</label>
+				<input id="cname" name="name" minlength="2" type="text" required>
+			</p>
+			<p>
+				<label for="cemail">E-Mail (required)</label>
+				<input id="cemail" type="email" name="email" required>
+			</p>
+			<p>
+				<label for="curl">URL (optional)</label>
+				<input id="curl" type="url" name="url">
+			</p>
+			<p>
+				<label for="ccomment">Your comment (required)</label>
+				<textarea id="ccomment" name="comment" required></textarea>
+			</p>
+			<p>
+				<input class="submit" type="submit" value="Submit">
+			</p>
+		</fieldset>
+	</form>
+	<form class="cmxform" id="signupForm" method="get" action="">
+		<fieldset>
+			<legend>Validating a complete form</legend>
+			<p>
+				<label for="firstname">Firstname</label>
+				<input id="firstname" name="firstname" type="text">
+			</p>
+			<p>
+				<label for="lastname">Lastname</label>
+				<input id="lastname" name="lastname" type="text">
+			</p>
+			<p>
+				<label for="username">Username</label>
+				<input id="username" name="username" type="text">
+			</p>
+			<p>
+				<label for="password">Password</label>
+				<input id="password" name="password" type="password">
+			</p>
+			<p>
+				<label for="confirm_password">Confirm password</label>
+				<input id="confirm_password" name="confirm_password" type="password">
+			</p>
+			<p>
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email">
+			</p>
+			<p>
+				<label for="agree">Please agree to our policy</label>
+				<input type="checkbox" class="checkbox" id="agree" name="agree">
+			</p>
+			<p>
+				<label for="newsletter">I'd like to receive the newsletter</label>
+				<input type="checkbox" class="checkbox" id="newsletter" name="newsletter">
+			</p>
+			<fieldset id="newsletter_topics">
+				<legend>Topics (select at least two) - note: would be hidden when newsletter isn't selected, but is visible here for the demo</legend>
+				<label for="topic_marketflash">
+					<input type="checkbox" id="topic_marketflash" value="marketflash" name="topic">Marketflash
+				</label>
+				<label for="topic_fuzz">
+					<input type="checkbox" id="topic_fuzz" value="fuzz" name="topic">Latest fuzz
+				</label>
+				<label for="topic_digester">
+					<input type="checkbox" id="topic_digester" value="digester" name="topic">Mailing list digester
+				</label>
+				<label for="topic" class="error">Please select at least two topics you'd like to receive.</label>
+			</fieldset>
+			<p>
+				<input class="submit" type="submit" value="Submit">
+			</p>
+		</fieldset>
+	</form>
+	<h3>Synthetic examples</h3>
+	<ul>
+		<li><a href="errorcontainer-demo.html">Error message containers in action</a>
+		</li>
+		<li><a href="custom-messages-data-demo.html">Custom Messages as Element Data</a>
+		</li>
+		<li><a href="radio-checkbox-select-demo.html">Radio and checkbox buttons and selects</a>
+		</li>
+		<li><a href="ajaxSubmit-integration-demo.html">Integration with Form Plugin (AJAX submit)</a>
+		</li>
+		<li><a href="custom-methods-demo.html">Custom methods and message display.</a>
+		</li>
+		<li><a href="dynamic-totals.html">Dynamic forms</a>
+		</li>
+		<li><a href="themerollered.html">Forms styled with jQuery UI Themeroller</a>
+		</li>
+		<li><a href="tinymce/">TinyMCE Demo</a>
+		</li>
+		<li><a href="file_input.html">File inputs</a>
+		</li>
+		<li><a href="jquerymobile.html">jQuery Mobile Form Validation</a>
+		</li>
+		<li><a href="errors-within-labels.html">Displaying Errors within Field Labels</a>
+		</li>
+		<li><a href="requirejs/index.html">Loading via RequireJS</a>
+		</li>
+	</ul>
+	<h3>Real-world examples</h3>
+	<ul>
+		<li><a href="milk/">Remember The Milk signup form</a>
+		</li>
+		<li><a href="marketo/">Marketo signup form</a>
+		</li>
+		<li><a href="multipart/">Buy and Sell a House multipart form</a>
+		</li>
+		<li><a href="captcha/">Remote captcha validation</a>
+		</li>
+	</ul>
+	<h3>Testsuite</h3>
+	<ul>
+		<li><a href="../test/">Validation Testsuite</a>
+		</li>
+	</ul>
+</div>
+</body>
+</html>
+
+
+
+***************************************************************************
+
+Get facebook Image
+$rnimg = substr(str_shuffle("abcdefghijklmnopqrstuvwxyz"), 0, 4);
+$profile_pic = strtolower($first_name).'_'.$rnimg.'.jpg';
+$image = file_get_contents('https://graph.facebook.com/'.$fbid.'/picture?width=320');//To get facebook profile pic
+file_put_contents(PROSTO.$profile_pic, $image); //Where to save the image on your server
+
+***************************************************************************
+Code for inserting lat,lng using address:
+
+$prepAddr = str_replace(' ','+',$where_are_you_from);
+	$geocode=file_get_contents('http://maps.google.com/maps/api/geocode/json?address='.$prepAddr.'&sensor=false');
+	$output= json_decode($geocode); 
+	$lat = $output->results[0]->geometry->location->lat;
+	$lng = $output->results[0]->geometry->location->lng;
+	
+For Displaying the object near by lat,lng
+
+$select = mysql_query("SELECT *, ((ACOS(SIN($lat * PI() / 180) * SIN(lat * PI() / 180) + COS($lat * PI() / 180) * COS(lat * PI() / 180) * COS(($lng - lng) * PI() / 180)) * 180 / PI()) * 60 * 1.1515) AS distance FROM museum_guest_book  HAVING distance<=$radious");	
+
+*********************************************************************************************************
+
+code for json condition:
+
+$getjsonvalue  = json_encode($json);
+	
+	if($getjsonvalue =='null'){
+		$data['code']='301';
+		$data['error'] ="Not found records";
+		$json['response']=$data;
+		echo json_encode($json);
+	}else{
+		echo json_encode($json);
+	}
+******************************************************
+code for push notification(android)
+// code for notification
+			
+			define("GOOGLE_API_KEY", "AIzaSyCB-ONdrdY7s0WSiyPQWd4cMffTP9YS-V0");
+			$regID=$reg_id;
+				
+			$registatoin_ids=array($regID);
+			$msg = array("message"=> $uname .' wants to purchase your item');
+			
+			$url='https://android.googleapis.com/gcm/send';
+			
+			$fields=array
+			(
+			'registration_ids'=>$registatoin_ids,
+			'data'=>$msg
+			);
+
+			
+			$headers=array
+			(
+			'Authorization: key=' . GOOGLE_API_KEY,
+			'Content-Type: application/json'
+			);
+			$ch=curl_init();
+			curl_setopt($ch,CURLOPT_URL,$url);
+			curl_setopt($ch,CURLOPT_POST,true);
+			curl_setopt($ch,CURLOPT_HTTPHEADER,$headers);
+			curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
+			curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,false);
+			curl_setopt($ch,CURLOPT_POSTFIELDS,json_encode($fields));
+			$result=curl_exec($ch);
+			curl_close($ch);
+			$data['res'] = $result;
+
+************************************************************************
+get lat lng from address and also get the country from lat lng
+	$where_are_you_from = "shimla";
+	$prepAddr = str_replace(' ','+',$where_are_you_from);
+	$geocode=file_get_contents('http://maps.google.com/maps/api/geocode/json?address='.$prepAddr.'&sensor=false');
+	$output= json_decode($geocode); 
+	$lat = $output->results[0]->geometry->location->lat;
+	$lng = $output->results[0]->geometry->location->lng;
+	//get country from lat,lng
+	$geocode_country=file_get_contents('http://maps.googleapis.com/maps/api/geocode/json?latlng='.$lat.','.$lng.'&sensor=false');
+	$output_country= json_decode($geocode_country);
+	//$address_country="";
+	for($j=0;$j<count($output_country->results[0]->address_components);$j++){		
+		//echo $output_country->results[0]->address_components[$j]->types[0]." = ". $output_country->results[0]->address_components[$j]->long_name."<br/>";
+	if($output_country->results[0]->address_components[$j]->types[0]=='administrative_area_level_1'){
+		
+		echo $output_country->results[0]->address_components[$j]->long_name."<br/>";
+		}
+	if($output_country->results[0]->address_components[$j]->types[0]=='country'){
+		
+		echo $output_country->results[0]->address_components[$j]->long_name."<br/>";
+		}
+	}
+******************************************************************************************
+cron job path for same server file
+wget -o out2.txt -O out.txt "http://jackfruitapp.com/webapp/cron_job.php"
+
+/usr/bin/GET http://pattannco.com/projects/taxiApp/webapp/cron_userLogout.php
+**************************************************************************************
+color picker script:
+<script type="text/javascript" src="jscolor.js"></script>		
+use :<class="color {hash:true}">
+http://jscolor.com/try.php (use this file in the directory)
+
+***************************************************************
+[calc id=2970]
+[calc id=2886]
+[calc id=2835]
+[calc id=1616]
+[calc id=3725]
+[calc id=3723]
+**********************
+<li><a href="http://leigh.dev.diamhost.com/?s=cars&car=1&confirm=mail&vin='.$vin_value.'&title='.$title.'">Confirm <br>Availability</a></li>
+<option <?php for ($no_of_tee = 1;$no_of_tee<18;$no_of_tee++ ) echo 'selected'; ?> value="<?php echo $no_of_tee;?>"><?php echo $no_of_tee?></option>
+					<option <?php if ($no_of_tee == 0 ) echo 'selected'; ?> value="0">0</option>
+					<option <?php if ($no_of_tee == 1 ) echo 'selected'; ?> value="1"><?php echo $no_of_tee?></option>
+					<option <?php if ($no_of_tee == 2 ) echo 'selected'; ?> value="2">2</option>
+					<option <?php if ($no_of_tee == 3 ) echo 'selected'; ?> value="3">3</option>
+										<?php
+					/*(isset($_POST["no_of_tee"])) ? $no_of_tee = $_POST["no_of_tee"] : $no_of_tee=0;
+					?>
+					<!--<form>
+					<div class="form_line">
+					<label>No of Tee: *</label>
+					<span><select id="no_of_tee" name="no_of_tee" onchange="" style="width:100px;>
+					 <?php for ($no_of_tee = 0;$no_of_tee<=18;$no_of_tee++ ) 
+					 {
+						 echo '<option selected value="'.$no_of_tee.'">'.$no_of_tee.' </option>';
+					 }
+					?>
+
+						  <input type="text" pattern="\d+(\.\d*)?" name="wht_tee_dist[]" placeholder="white tee distance" id="wht_tee_dist[]" style="width:120px;"required>&nbsp;&nbsp;
+						
+					</select>
+					</span>
+					</form>
+					</div>-->*/
+*****************************************************************************
+<?php if(!empty($optionRow['description'])){ $var1=$optionRow['description']; $var=explode(" ",$var1);for($i=0;$i<10;$i++){ $var2 = $var[$i]." ";echo $var2;}}?>    </td>-->
+				
+				<td class="decode_table_odd" ><?php if(!empty($optionRow['description'])){ $var1=$optionRow['description']; echo substr($var1,0,150);}?></td>
+****************************************************************************
+telnet gateway.push.apple.com 2195
+*********************************************888
+<div class="back_div"><a class="back" style=" color: #12619D;" href="#" onclick="window.history.go(-1); return false;"> Back To Results </a></div>
+********************************************************
+//function jsonRemoveUnicodeSequences($json_data_cat) {
+//   return preg_replace("/\\\\u([a-f0-9]{4})/e", "iconv('UCS-4LE','UTF-8',pack('V', hexdec('U$1')))", json_encode($json_data_cat));//
+//}
+*************************************************************
+<?php
+include("config.php");
+//$_GET['q_id'] = 102;
+//get category id after that retrieve all data against that category
+
+// category_catid
+//category_questions_count
+//questions_qid
+//http://web1.kindlebit.com/DEVELOPMENT/biblebook/database_category.php?category_catid=115&questions_qid=114&category_questions_count=10
+function jsonRemoveUnicodeSequences($json_data_cat) {
+   return preg_replace("/\\\\u([a-f0-9]{4})/e", "iconv('UCS-4LE','UTF-8',pack('V', hexdec('U$1')))", json_encode($json_data_cat));
+}
+
+if(isset($_GET['category_catid'])){
+	$category_catid = trim($_GET['category_catid']);
+
+        $questions_qid = trim($_GET['questions_qid']);
+        $category_questions_count = trim($_GET['category_questions_count']);
+           
+
+        $categories = 	mysql_query("select * from category where cat_id >".$category_catid);
+	$num_row =mysql_num_rows($categories); //count retrieve data
+	if($num_row > 0){
+	while($rows = mysql_fetch_array($categories))
+	{
+		$cat['cat_id'] = $rows['cat_id'];
+		$cat['Name'] =  utf8_encode($rows['Name']);
+		$cat['image']= $rows['image'];
+		$json_data_cat[] = $cat;
+	}
+
+//echo jsonRemoveUnicodeSequences($json_data_cat);
+//echo print_r($json_data_cat);
+//echo json_encode($json_data_cat);
+		$json_data['category_data'] 		= 	$json_data_cat;
+	}else{
+		$catNofound = array();	
+                $json_data['category_data'] 		= $catNofound;
+        }	
+	
+
+/* get question id from the category_question table*/
+        $countall = mysql_num_rows(mysql_query("select * from category_questions"));
+	$que2 = 	mysql_query("select * from category_questions limit ".$category_questions_count.",".$countall);
+	$num_row2 =mysql_num_rows($que2); //count retrieve data
+	if($num_row2 > 0){
+	while($rows2 = mysql_fetch_array($que2))
+	{
+		$ques2['q_id'] = $rows2['q_id'];
+		$ques2['cat_id'] = $rows2['cat_id'];
+		$json_data_catques[] = $ques2;
+	}
+		$json_data['category_question_data'] 		=  $json_data_catques;
+	} else {
+                $quesNofound = array();
+		$json_data['category_question_data'] 		= $quesNofound;
+	}
+/*code for question table */
+        $que1 = mysql_query("select * from questions where q_id >".$questions_qid);
+	$num_row1 =mysql_num_rows($que1); //count retrieve data
+	if($num_row1 > 0){
+		while($rows1 = mysql_fetch_array($que1))
+		{
+			$ques['q_id'] = $rows1['q_id'];
+			$ques['question'] = utf8_encode($rows1['question']);
+			$ques['book'] = $rows1['book'];
+			$ques['verse'] = $rows1['verse'];
+			$ques['answer'] = strip_tags($rows1['answer']);
+			$ques['hits'] = $rows1['hits'];
+			$ques['timestamp'] = $rows1['timestamp'];
+			$json_data_qu[] = $ques;
+		}
+
+		$json_data['question_data'] 		= 	$json_data_qu;
+
+  	}else{
+		$ansNofound= array();
+                $json_data['question_data'] 		= $ansNofound;	
+        }
+      $json['response'] = $json_data;
+	
+
+}
+//echo '<pre>';print_r($json);die;
+//echo json_encode($json);
+ echo jsonRemoveUnicodeSequences($json);
+?>
+****************************************************************************
+code for getting center location of area using lat lng
+
+$coord=$rowRecord['coordinate'];
+			$cord=explode(",",$coord);
+			for($i=0;$i<count($cord);$i++)
+			{
+				if($i%2==0)
+				{
+					$long[]=$cord[$i];
+				}
+				else
+				{
+					$lati[]=$cord[$i];
+				}
+				
+			}
+			        $n=count($lati);
+                    echo $n;
+                    echo "<br>";
+               for($i=0;$i<$n;$i++)
+                    {
+						$lat[]=deg2rad($lati[$i]);
+						$lng[]=deg2rad($long[$i]);
+	                 echo "x".$i."=    ".$x[i] = cos($lat[$i]) * cos($lng[$i])."<br>";
+                     echo "y".$i."=    ".$y[i] = cos($lat[$i]) * sin($lng[$i])."<br>";
+                    echo "z".$i."=    ".$z[i] = sin($lat[$i])."<br>";
+                 //     echo "x".$i."=    ".$x[i] =$lat;
+                   //    echo "Y".$i."=    ".$y[i] = $lng;
+                     echo $x1=$x[i]+$x1."<br>";
+                     echo $y1=$y[i]+$y1."<br>";
+                     echo $z1=$z[i]+$z1."<br>";
+                    }
+               echo $x2=$x1/$n."<br>";
+               echo $y2=$y1/$n."<br>";
+               echo $z2=$z1/$n."<br>";
+                    $lng1 = atan2($y2,$x2);
+                    $hyp = sqrt(($x2 * $x2) + ($y2 * $y2));
+                    $lat1 = atan2($z2, $hyp);
+  
+          echo "<br>"."Lat = ".$lat1."<br>"."Lng = ".$lng1;
+           echo  "<br>".rad2deg ($lat1 );
+		   echo  "<br>".rad2deg ($lng1 );
+***********************************************************************
+   $cooord=$coord;
+   $cord=explode(",",$cooord);
+   for($i=0;$i<count($cord);$i++)
+			{
+				if($i%2==0)
+				{
+					$lati[]=$cord[$i];
+				}
+				else
+				{
+					$long[]=$cord[$i];
+				}
+				
+			}
+      $n=count($lati);
+                   
+               for($i=0;$i<$n;$i++)
+                    {
+						$lat[]=deg2rad($lati[$i]);
+						$lng[]=deg2rad($long[$i]);
+	                    $x[i] = cos($lat[$i]) * cos($lng[$i]);
+                        $y[i] = cos($lat[$i]) * sin($lng[$i]);
+                        $z[i] = sin($lat[$i]);
+                        $x1=$x[i]+$x1."<br>";
+                        $y1=$y[i]+$y1."<br>";
+                        $z1=$z[i]+$z1."<br>";
+                    }
+                    $x2=$x1/$n;
+                    $y2=$y1/$n;
+                    $z2=$z1/$n;
+                    $lng1 = atan2($y2,$x2);
+                    $hyp = sqrt(($x2 * $x2) + ($y2 * $y2));
+                    $lat1= atan2($z2, $hyp);
+                    $lat2= rad2deg ($lat1 );
+		            $lng2 =rad2deg ($lng1 );
+*******************************************************************************		            
+[blox_row][blox_column width="1/1"][blox_slider slider="layerslider_1"/][/blox_column][/blox_row][blox_row][blox_column width="1/1"][blox_divider type="dashed" space="5" fullwidth="1"/][/blox_column][/blox_row][blox_row columns="2/3+1/3"][blox_column width="2/3"][blox_blog blog_type="regular" categories="all" content="both" count="10" pager="1" overlay="both" order="default" skin="default"/][/blox_column][/blox_row]
+*********************************************************************
+
+	
+
+Assuming your server has the right ports open, "Connection Refused" usually hints at an invalid .PEM file or an incorrect passphrase. Make sure that when you open the .PEM file, the header looks something like this :
+
+Bag Attributes
+friendlyName: Apple Development IOS Push Services: com.yourapp.app
+localKeyID: A8 77 BC 0C 2E 81 10 6E 78 9F XX XX XX XX XX XX
+
+subject=/UID=com.yourapp.app/CN=Apple Development IOS Push Services: com.yourapp.app/C=FR issuer=/C=US/O=Apple Inc./OU=Apple Worldwide Developer Relations/CN=Apple Worldwide Developer Relations Certification Authority
+
+followed by a key which should then be followed by a header that looks like this for your private key :
+
+Bag Attributes
+friendlyName: Joe Black
+localKeyID: A8 77 BC 0C 2E 81 10 6E 78 9F XX XX XX XX XX XX XX XX
+Key Attributes: <No Attributes>
+
+I suggest you also remove the passphrase to reduce the potential error sources.
+*********************************************************
+https://github.com/markitondemand/DataApis
+String url	              =   "http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol="+_symbol+"&callback=myFunction";
+ 	String[] _Symbols = {"ALL","ALLE","ALLY","ALLT","ASG","PAA","USA","XBIAX","JMLP","GOOGL","ATR","MSL","JBL","RCL","ALG","CHS","VNO","USG","HR","HEI","DST","ETH","KEG","DO","TLM","BAP","CKH","SAP","CRY","GIB","TAC","EGY","CHK"};
+
+******************************************************************
+file transfer code one server to another
+<?php
+//file transfer code one server to another
+set_time_limit(0); //Unlimited max execution time
+ 
+$path = 'facebook.zip';// give the file name(.zip) where you want to upload the server zipped data
+$url = 'http://jbt.offsureit.com/facebook.zip';//url name where u want to download the server data
+$newfname = $path;
+echo 'Starting Download!<br>';
+$file = fopen ($url, "rb");
+if($file) {
+	$newf = fopen ($newfname, "wb");
+	if($newf)
+		while(!feof($file)) {
+			fwrite($newf, fread($file, 1024 * 8 ), 1024 * 8 );
+			echo '1 MB File Chunk Written!<br>';
+		}
+}
+if($file) {
+	fclose($file);
+}
+if($newf) {
+	fclose($newf);
+}
+echo 'Finished!';
+?>
+********************************************************************
+<html>
+    <form method="post">
+    <input name="url" size="50" />
+    <input name="submit" type="submit" />
+    </form>
+    <?php
+    // maximum execution time in seconds
+    set_time_limit (24 * 60 * 60);
+    if (!isset($_POST['submit'])) die();
+    // folder to save downloaded files to. must end with slash
+    $destination_folder = 'downloads/';
+    $url = $_POST['url'];
+    $newfname = $destination_folder . basename($url);
+    $file = fopen ($url, "rb");
+    if ($file) {
+      $newf = fopen ($newfname, "wb");
+      if ($newf)
+      while(!feof($file)) {
+        fwrite($newf, fread($file, 1024 * 8 ), 1024 * 8 );
+      }
+    }
+    if ($file) {
+      fclose($file);
+    }
+    if ($newf) {
+      fclose($newf);
+    }
+    ?>
+    </html>
+**************************************************
+	Server path
+	echo $host  = $_SERVER['HTTP_HOST'];
+	echo $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+	echo $extra = 'import.php?success=1';
+	echo $aa ="http://$host$uri/$extra"; 
+	header("Location: http://$host$uri/$extra");die;
+*******************************************************************
+
+
+1. window.location.href="login.jsp?backurl="+window.location.href;
+
+2. window.history.back(-1);
+
+3. window.navigate("top.jsp");                                  // old-IE-only
+
+4. self.location="top.htm";
+
+5. top.location="error.jsp";
+
+6. window.location = window.location.host;
+
+7. $(location).attr('href',"http://www.google.com");            //jQuery
+
+8. $jq(window).attr("location","http://www.google.com");        //jQuery
+
+9. window.location.replace("http://www.kqingdom.com");
+
+10. window.location.assign("http://www.mozilla.org");
+
+11. document.location.href = '/path';
+************************************************************************
+********************************************************************
+razvanto_findMeApp 
+User: razvanto_findMe
+Database: razvanto_findMeApp
+pwd: findme@123
+
+User: saan123_eventUsr
+Database: saan123_eventapp
+
+db:saan123_eventapp
+user:saan123_eventUsr
+pwd: eventapp@123
+********************************************************************
+paging
+
+<?php
+	/*
+		Place code to connect to your DB here.
+	*/
+	include('config.php');	// include your code to connect to DB.
+
+	$tbl_name="";		//your table name
+	// How many adjacent pages should be shown on each side?
+	$adjacents = 3;
+	
+	/* 
+	   First get total number of rows in data table. 
+	   If you have a WHERE clause in your query, make sure you mirror it here.
+	*/
+	$query = "SELECT COUNT(*) as num FROM $tbl_name";
+	$total_pages = mysql_fetch_array(mysql_query($query));
+	$total_pages = $total_pages[num];
+	
+	/* Setup vars for query. */
+	$targetpage = "filename.php"; 	//your file name  (the name of this file)
+	$limit = 2; 								//how many items to show per page
+	$page = $_GET['page'];
+	if($page) 
+		$start = ($page - 1) * $limit; 			//first item to display on this page
+	else
+		$start = 0;								//if no page var is given, set start to 0
+	
+	/* Get data. */
+	$sql = "SELECT column_name FROM $tbl_name LIMIT $start, $limit";
+	$result = mysql_query($sql);
+	
+	/* Setup page vars for display. */
+	if ($page == 0) $page = 1;					//if no page var is given, default to 1.
+	$prev = $page - 1;							//previous page is page - 1
+	$next = $page + 1;							//next page is page + 1
+	$lastpage = ceil($total_pages/$limit);		//lastpage is = total pages / items per page, rounded up.
+	$lpm1 = $lastpage - 1;						//last page minus 1
+	
+	/* 
+		Now we apply our rules and draw the pagination object. 
+		We're actually saving the code to a variable in case we want to draw it more than once.
+	*/
+	$pagination = "";
+	if($lastpage > 1)
+	{	
+		$pagination .= "<div class=\"pagination\">";
+		//previous button
+		if ($page > 1) 
+			$pagination.= "<a href=\"$targetpage?page=$prev\">� previous</a>";
+		else
+			$pagination.= "<span class=\"disabled\">� previous</span>";	
+		
+		//pages	
+		if ($lastpage < 7 + ($adjacents * 2))	//not enough pages to bother breaking it up
+		{	
+			for ($counter = 1; $counter <= $lastpage; $counter++)
+			{
+				if ($counter == $page)
+					$pagination.= "<span class=\"current\">$counter</span>";
+				else
+					$pagination.= "<a href=\"$targetpage?page=$counter\">$counter</a>";					
+			}
+		}
+		elseif($lastpage > 5 + ($adjacents * 2))	//enough pages to hide some
+		{
+			//close to beginning; only hide later pages
+			if($page < 1 + ($adjacents * 2))		
+			{
+				for ($counter = 1; $counter < 4 + ($adjacents * 2); $counter++)
+				{
+					if ($counter == $page)
+						$pagination.= "<span class=\"current\">$counter</span>";
+					else
+						$pagination.= "<a href=\"$targetpage?page=$counter\">$counter</a>";					
+				}
+				$pagination.= "...";
+				$pagination.= "<a href=\"$targetpage?page=$lpm1\">$lpm1</a>";
+				$pagination.= "<a href=\"$targetpage?page=$lastpage\">$lastpage</a>";		
+			}
+			//in middle; hide some front and some back
+			elseif($lastpage - ($adjacents * 2) > $page && $page > ($adjacents * 2))
+			{
+				$pagination.= "<a href=\"$targetpage?page=1\">1</a>";
+				$pagination.= "<a href=\"$targetpage?page=2\">2</a>";
+				$pagination.= "...";
+				for ($counter = $page - $adjacents; $counter <= $page + $adjacents; $counter++)
+				{
+					if ($counter == $page)
+						$pagination.= "<span class=\"current\">$counter</span>";
+					else
+						$pagination.= "<a href=\"$targetpage?page=$counter\">$counter</a>";					
+				}
+				$pagination.= "...";
+				$pagination.= "<a href=\"$targetpage?page=$lpm1\">$lpm1</a>";
+				$pagination.= "<a href=\"$targetpage?page=$lastpage\">$lastpage</a>";		
+			}
+			//close to end; only hide early pages
+			else
+			{
+				$pagination.= "<a href=\"$targetpage?page=1\">1</a>";
+				$pagination.= "<a href=\"$targetpage?page=2\">2</a>";
+				$pagination.= "...";
+				for ($counter = $lastpage - (2 + ($adjacents * 2)); $counter <= $lastpage; $counter++)
+				{
+					if ($counter == $page)
+						$pagination.= "<span class=\"current\">$counter</span>";
+					else
+						$pagination.= "<a href=\"$targetpage?page=$counter\">$counter</a>";					
+				}
+			}
+		}
+		
+		//next button
+		if ($page < $counter - 1) 
+			$pagination.= "<a href=\"$targetpage?page=$next\">next �</a>";
+		else
+			$pagination.= "<span class=\"disabled\">next �</span>";
+		$pagination.= "</div>\n";		
+	}
+?>
+
+	<?php
+		while($row = mysql_fetch_array($result))
+		{
+	
+		// Your while loop here
+	
+		}
+	?>
+
+<?=$pagination?>
+*************************************************************************
